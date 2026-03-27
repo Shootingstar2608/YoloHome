@@ -1,0 +1,1592 @@
+nohup: ignoring input
+/home/peter/DADN/web_app/app.py:1: DeprecationWarning: 
+Eventlet is deprecated. It is currently being maintained in bugfix mode, and
+we strongly recommend against using it for new projects.
+
+If you are already using Eventlet, we recommend migrating to a different
+framework.  For more detail see
+https://eventlet.readthedocs.io/en/latest/asyncio/migration.html
+
+  import eventlet
+/home/peter/DADN/web_app/app.py:55: DeprecationWarning: Callback API version 1 is deprecated, update to latest version
+  mqtt_client = mqtt.Client()
+(40684) wsgi starting up on http://0.0.0.0:5000
+(40684) accepted ('127.0.0.1', 36276)
+Invalid session AKmj8vcv1U6SIaVrAAAI (further occurrences of this error will be logged with level INFO)
+127.0.0.1 - - [12/Mar/2026 15:51:27] "GET /socket.io/?EIO=4&transport=websocket&sid=AKmj8vcv1U6SIaVrAAAI HTTP/1.1" 400 241 0.001315
+(40684) accepted ('127.0.0.1', 36292)
+127.0.0.1 - - [12/Mar/2026 15:51:30] "GET /socket.io/?EIO=4&transport=websocket&sid=Br00RbmdeK3cuHovAAAO HTTP/1.1" 400 241 0.000815
+(40684) accepted ('127.0.0.1', 36300)
+127.0.0.1 - - [12/Mar/2026 15:51:31] "GET /socket.io/?EIO=4&transport=websocket&sid=qy-pPHYoKeVezFbDAAAQ HTTP/1.1" 400 241 0.000996
+(40684) accepted ('127.0.0.1', 36310)
+127.0.0.1 - - [12/Mar/2026 15:51:32] "GET /socket.io/?EIO=4&transport=websocket&sid=zyrIfXoqmNrUGSHpAAAS HTTP/1.1" 400 241 0.000649
+(40684) accepted ('127.0.0.1', 41008)
+127.0.0.1 - - [12/Mar/2026 15:51:35] "GET /socket.io/?EIO=4&transport=websocket&sid=3vPU4wB6N52kq4_5AAAY HTTP/1.1" 400 241 0.000912
+(40684) accepted ('127.0.0.1', 40776)
+127.0.0.1 - - [12/Mar/2026 15:51:51] "GET /socket.io/?EIO=4&transport=websocket&sid=J0k06QeOFUtF9sSWAAA2 HTTP/1.1" 400 241 0.000632
+(40684) accepted ('127.0.0.1', 40798)
+127.0.0.1 - - [12/Mar/2026 15:51:53] "GET /socket.io/?EIO=4&transport=websocket&sid=LsGUHXokyM_bn88qAAA6 HTTP/1.1" 400 241 0.000645
+(40684) accepted ('127.0.0.1', 49978)
+127.0.0.1 - - [12/Mar/2026 15:51:56] "GET /socket.io/?EIO=4&transport=websocket&sid=Ys2E5hyFcRpHeNExAABA HTTP/1.1" 400 241 0.000906
+Khởi động server...
+ Thành công kết nối với MQTT Broker!
+ Đã đăng ký (subscribe) các kênh: demo/feeds/V1, demo/feeds/V2
+ Message received - Topic: demo/feeds/V1 | Message: 0
+ Message received - Topic: demo/feeds/V2 | Message: 1
+ Thành công kết nối với MQTT Broker!
+ Đã đăng ký (subscribe) các kênh: demo/feeds/V1, demo/feeds/V2
+ Message received - Topic: demo/feeds/V1 | Message: 0
+ Message received - Topic: demo/feeds/V2 | Message: 1
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.7
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.4
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.4
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.7
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.9
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 54.7
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.7
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 54.6
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 54.7
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.8
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 54.9
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 54.9
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.7
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.7
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.8
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.7
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 54.7
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 81
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 79
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 19
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 39
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 28
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 84
+(40684) accepted ('127.0.0.1', 45512)
+127.0.0.1 - - [12/Mar/2026 15:52:32] "GET /socket.io/?EIO=4&transport=websocket&sid=n3vOdhM0mkufEf3MAABO HTTP/1.1" 400 241 0.000664
+(40684) accepted ('127.0.0.1', 57892)
+127.0.0.1 - - [12/Mar/2026 15:52:35] "GET /socket.io/?EIO=4&transport=websocket&sid=hl7m30NfrvB9cSNsAABQ HTTP/1.1" 400 241 0.000208
+(40684) accepted ('127.0.0.1', 57908)
+127.0.0.1 - - [12/Mar/2026 15:52:37] "GET /socket.io/?EIO=4&transport=websocket&sid=x8QKO6pxB3yhImgKAABS HTTP/1.1" 400 241 0.000636
+(40684) accepted ('127.0.0.1', 57936)
+127.0.0.1 - - [12/Mar/2026 15:52:43] "GET /socket.io/?EIO=4&transport=websocket&sid=mZ0onjUJE92PnuHHAABW HTTP/1.1" 400 241 0.000791
+(40684) accepted ('127.0.0.1', 41698)
+127.0.0.1 - - [12/Mar/2026 15:53:11] "GET /socket.io/?EIO=4&transport=websocket&sid=ZF2ky4ZJDxyFI-PzAABY HTTP/1.1" 400 241 0.000226
+(40684) accepted ('127.0.0.1', 60418)
+127.0.0.1 - - [12/Mar/2026 15:53:40] "GET /socket.io/?EIO=4&transport=websocket&sid=_PkXgYacMBfptHHpAABc HTTP/1.1" 400 241 0.000647
+(40684) accepted ('127.0.0.1', 49618)
+127.0.0.1 - - [12/Mar/2026 15:53:49] "GET /socket.io/?EIO=4&transport=websocket&sid=cgO8TMLYVYxR9p-3AABk HTTP/1.1" 400 241 0.000751
+(40684) accepted ('127.0.0.1', 34616)
+127.0.0.1 - - [12/Mar/2026 15:54:09] "GET /socket.io/?EIO=4&transport=websocket&sid=WODsOEUIu-XG4pGOAAB0 HTTP/1.1" 400 241 0.000685
+(40684) accepted ('127.0.0.1', 34626)
+127.0.0.1 - - [12/Mar/2026 15:54:13] "GET /socket.io/?EIO=4&transport=websocket&sid=fVwwzRG5TUeK3_4dAAB4 HTTP/1.1" 400 241 0.000623
+(40684) accepted ('127.0.0.1', 53958)
+127.0.0.1 - - [12/Mar/2026 15:54:17] "GET /socket.io/?EIO=4&transport=websocket&sid=r71Fe40f7kLIp2bLAAB8 HTTP/1.1" 400 241 0.000480
+(40684) accepted ('127.0.0.1', 53974)
+127.0.0.1 - - [12/Mar/2026 15:54:21] "GET /socket.io/?EIO=4&transport=websocket&sid=gBVQ7ZcmyntsdlceAACA HTTP/1.1" 400 241 0.000567
+(40684) accepted ('127.0.0.1', 45420)
+127.0.0.1 - - [12/Mar/2026 15:54:43] "GET /socket.io/?EIO=4&transport=websocket&sid=raaiSUWL2AUMgChPAACS HTTP/1.1" 400 241 0.000891
+(40684) accepted ('127.0.0.1', 56744)
+127.0.0.1 - - [12/Mar/2026 15:54:50] "GET /socket.io/?EIO=4&transport=websocket&sid=CDyCQQv5qjQFcD_9AACY HTTP/1.1" 400 241 0.000585
+(40684) accepted ('127.0.0.1', 56756)
+127.0.0.1 - - [12/Mar/2026 15:54:52] "GET /socket.io/?EIO=4&transport=websocket&sid=hZNauXf7vViPS-HPAACa HTTP/1.1" 400 241 0.000633
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 81
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+(40684) accepted ('127.0.0.1', 35352)
+127.0.0.1 - - [12/Mar/2026 15:54:57] "GET /socket.io/?EIO=4&transport=websocket&sid=xetuW9J49qfN6I7OAACe HTTP/1.1" 400 241 0.000647
+(40684) accepted ('127.0.0.1', 44076)
+127.0.0.1 - - [12/Mar/2026 15:55:09] "GET /socket.io/?EIO=4&transport=websocket&sid=mMnouTMCk4-4p2hKAACq HTTP/1.1" 400 241 0.000631
+(40684) accepted ('127.0.0.1', 56444)
+127.0.0.1 - - [12/Mar/2026 15:55:27] "GET /socket.io/?EIO=4&transport=websocket&sid=hWvYFUHZe_lcuN_aAAC4 HTTP/1.1" 400 241 0.000582
+(40684) accepted ('127.0.0.1', 57662)
+127.0.0.1 - - [12/Mar/2026 15:55:41] "GET /socket.io/?EIO=4&transport=websocket&sid=CGjh2PsqlBHsr-itAADG HTTP/1.1" 400 241 0.000638
+(40684) accepted ('127.0.0.1', 51966)
+127.0.0.1 - - [12/Mar/2026 15:55:51] "GET /socket.io/?EIO=4&transport=websocket&sid=FkiIPMcdLTy90hV2AADO HTTP/1.1" 400 241 0.001214
+(40684) accepted ('127.0.0.1', 42066)
+127.0.0.1 - - [12/Mar/2026 15:56:03] "GET /socket.io/?EIO=4&transport=websocket&sid=R9zoj8vJWHT8ouYtAADY HTTP/1.1" 400 241 0.000798
+(40684) accepted ('127.0.0.1', 46990)
+127.0.0.1 - - [12/Mar/2026 15:56:10] "GET /socket.io/?EIO=4&transport=websocket&sid=ykeCEmhSEuR-tPMhAADe HTTP/1.1" 400 241 0.000127
+(40684) accepted ('127.0.0.1', 46994)
+127.0.0.1 - - [12/Mar/2026 15:56:13] "GET /socket.io/?EIO=4&transport=websocket&sid=ByW0MJFFPA-lOpCkAADg HTTP/1.1" 400 241 0.000654
+(40684) accepted ('127.0.0.1', 58334)
+127.0.0.1 - - [12/Mar/2026 15:56:21] "GET /socket.io/?EIO=4&transport=websocket&sid=0iVYzVpx5sffV_67AADm HTTP/1.1" 400 241 0.000642
+(40684) accepted ('127.0.0.1', 58336)
+127.0.0.1 - - [12/Mar/2026 15:56:23] "GET /socket.io/?EIO=4&transport=websocket&sid=6rjkJosfGGmPOLZRAADo HTTP/1.1" 400 241 0.000164
+(40684) accepted ('127.0.0.1', 53922)
+127.0.0.1 - - [12/Mar/2026 15:56:28] "GET /socket.io/?EIO=4&transport=websocket&sid=rXFMC2lfudJn2KWBAADs HTTP/1.1" 400 241 0.000632
+(40684) accepted ('127.0.0.1', 53936)
+127.0.0.1 - - [12/Mar/2026 15:56:33] "GET /socket.io/?EIO=4&transport=websocket&sid=W17Xuvl75ua6l92wAADw HTTP/1.1" 400 241 0.001350
+(40684) accepted ('127.0.0.1', 33404)
+127.0.0.1 - - [12/Mar/2026 15:56:36] "GET /socket.io/?EIO=4&transport=websocket&sid=SJ2b1_R-BsQlwxMDAADy HTTP/1.1" 400 241 0.000122
+(40684) accepted ('127.0.0.1', 33420)
+127.0.0.1 - - [12/Mar/2026 15:56:42] "GET /socket.io/?EIO=4&transport=websocket&sid=qsGsHlmDvabX7PAuAAD2 HTTP/1.1" 400 241 0.000110
+(40684) accepted ('127.0.0.1', 54450)
+127.0.0.1 - - [12/Mar/2026 15:57:00] "GET /socket.io/?EIO=4&transport=websocket&sid=dzUephF3lmlREOWfAAEE HTTP/1.1" 400 241 0.000114
+(40684) accepted ('127.0.0.1', 35476)
+127.0.0.1 - - [12/Mar/2026 15:57:15] "GET /socket.io/?EIO=4&transport=websocket&sid=ihcjtW660k6-bIFRAAEQ HTTP/1.1" 400 241 0.000670
+(40684) accepted ('127.0.0.1', 35490)
+127.0.0.1 - - [12/Mar/2026 15:57:18] "GET /socket.io/?EIO=4&transport=websocket&sid=TFYyMe824hCOgSHuAAES HTTP/1.1" 400 241 0.000124
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 81
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+:37] "GET /socket.io/?EIO=4&transport=polling&t=PpXG5nl&sid=-SiOohW_cuc85Cc7AABa HTTP/1.1" 200 230 0.086366
+127.0.0.1 - - [12/Mar/2026 15:53:38] "GET /socket.io/?EIO=4&transport=polling&t=PpXG5p7&sid=-SiOohW_cuc85Cc7AABa HTTP/1.1" 200 181 0.811112
+127.0.0.1 - - [12/Mar/2026 15:53:38] "POST /socket.io/?EIO=4&transport=polling&t=PpXG5_t&sid=-SiOohW_cuc85Cc7AABa HTTP/1.1" 200 219 0.000798
+127.0.0.1 - - [12/Mar/2026 15:53:39] "POST /socket.io/?EIO=4&transport=polling&t=PpXG6H0&sid=-SiOohW_cuc85Cc7AABa HTTP/1.1" 200 219 0.000943
+127.0.0.1 - - [12/Mar/2026 15:53:40] "GET /socket.io/?EIO=4&transport=polling&t=PpXG6Wq HTTP/1.1" 200 300 0.001299
+127.0.0.1 - - [12/Mar/2026 15:53:40] "POST /socket.io/?EIO=4&transport=polling&t=PpXG6X0&sid=_PkXgYacMBfptHHpAABc HTTP/1.1" 200 219 0.002723
+127.0.0.1 - - [12/Mar/2026 15:53:41] "POST /socket.io/?EIO=4&transport=polling&t=PpXG6mu&sid=_PkXgYacMBfptHHpAABc HTTP/1.1" 200 219 0.001302
+127.0.0.1 - - [12/Mar/2026 15:53:42] "GET /socket.io/?EIO=4&transport=polling&t=PpXG71v HTTP/1.1" 200 300 0.001083
+127.0.0.1 - - [12/Mar/2026 15:53:42] "POST /socket.io/?EIO=4&transport=polling&t=PpXG723&sid=YWxhWs2UFOYbgAbRAABe HTTP/1.1" 200 219 0.002647
+(39645) accepted ('127.0.0.1', 60430)
+127.0.0.1 - - [12/Mar/2026 15:53:43] "GET /socket.io/?EIO=4&transport=websocket&sid=YWxhWs2UFOYbgAbRAABe HTTP/1.1" 200 0 1.016574
+127.0.0.1 - - [12/Mar/2026 15:53:44] "GET /socket.io/?EIO=4&transport=polling&t=PpXG7aA HTTP/1.1" 200 300 0.001021
+127.0.0.1 - - [12/Mar/2026 15:53:44] "POST /socket.io/?EIO=4&transport=polling&t=PpXG7aM&sid=glaPRrdqoUJc1wQ9AABg HTTP/1.1" 200 219 0.002565
+(39645) accepted ('127.0.0.1', 49594)
+127.0.0.1 - - [12/Mar/2026 15:53:45] "GET /socket.io/?EIO=4&transport=websocket&sid=glaPRrdqoUJc1wQ9AABg HTTP/1.1" 200 0 1.006545
+127.0.0.1 - - [12/Mar/2026 15:53:47] "GET /socket.io/?EIO=4&transport=polling&t=PpXG8Jv HTTP/1.1" 200 300 0.000502
+127.0.0.1 - - [12/Mar/2026 15:53:47] "POST /socket.io/?EIO=4&transport=polling&t=PpXG8Jz&sid=TupGvAlTaS1us0TEAABi HTTP/1.1" 200 219 0.000999
+127.0.0.1 - - [12/Mar/2026 15:53:48] "POST /socket.io/?EIO=4&transport=polling&t=PpXG8a4&sid=TupGvAlTaS1us0TEAABi HTTP/1.1" 200 219 0.000937
+127.0.0.1 - - [12/Mar/2026 15:53:49] "GET /socket.io/?EIO=4&transport=polling&t=PpXG8pw HTTP/1.1" 200 300 0.001129
+127.0.0.1 - - [12/Mar/2026 15:53:49] "POST /socket.io/?EIO=4&transport=polling&t=PpXG8q7&sid=cgO8TMLYVYxR9p-3AABk HTTP/1.1" 200 219 0.002647
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.8
+ Thiết bị Web đã kết nối (WebSocket).
+ Thiết bị Web đã kết nối (WebSocket).
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Thiết bị Web đã kết nối (WebSocket).
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Thiết bị Web đã kết nối (WebSocket).
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 39
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 28
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.5
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.4
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.3
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.2
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+127.0.0.1 - - [12/Mar/2026 15:53:50] "POST /socket.io/?EIO=4&transport=polling&t=PpXG944&sid=cgO8TMLYVYxR9p-3AABk HTTP/1.1" 200 219 0.000940
+127.0.0.1 - - [12/Mar/2026 15:53:53] "GET /socket.io/?EIO=4&transport=polling&t=PpXG9Ze HTTP/1.1" 200 300 0.001162
+127.0.0.1 - - [12/Mar/2026 15:53:53] "POST /socket.io/?EIO=4&transport=polling&t=PpXG9Zr&sid=3DzrD5tm_27Yyx9lAABm HTTP/1.1" 200 219 0.002603
+127.0.0.1 - - [12/Mar/2026 15:53:54] "POST /socket.io/?EIO=4&transport=polling&t=PpXG9pr&sid=3DzrD5tm_27Yyx9lAABm HTTP/1.1" 200 219 0.000953
+127.0.0.1 - - [12/Mar/2026 15:53:55] "GET /socket.io/?EIO=4&transport=polling&t=PpXGA3V HTTP/1.1" 200 300 0.000910
+127.0.0.1 - - [12/Mar/2026 15:53:55] "POST /socket.io/?EIO=4&transport=polling&t=PpXGA3d&sid=-u-SrgwgFo-SXK6eAABo HTTP/1.1" 200 219 0.002264
+(39645) accepted ('127.0.0.1', 51712)
+127.0.0.1 - - [12/Mar/2026 15:53:56] "GET /socket.io/?EIO=4&transport=websocket&sid=-u-SrgwgFo-SXK6eAABo HTTP/1.1" 200 0 1.009988
+127.0.0.1 - - [12/Mar/2026 15:53:57] "GET /socket.io/?EIO=4&transport=polling&t=PpXGAZH HTTP/1.1" 200 300 0.001078
+127.0.0.1 - - [12/Mar/2026 15:53:57] "POST /socket.io/?EIO=4&transport=polling&t=PpXGAZa&sid=_OuQqqJk5T6XOP5RAABq HTTP/1.1" 200 219 0.001592
+(39645) accepted ('127.0.0.1', 51716)
+127.0.0.1 - - [12/Mar/2026 15:53:58] "GET /socket.io/?EIO=4&transport=websocket&sid=_OuQqqJk5T6XOP5RAABq HTTP/1.1" 200 0 1.010907
+127.0.0.1 - - [12/Mar/2026 15:53:59] "GET /socket.io/?EIO=4&transport=polling&t=PpXGBAl HTTP/1.1" 200 300 0.001092
+127.0.0.1 - - [12/Mar/2026 15:53:59] "POST /socket.io/?EIO=4&transport=polling&t=PpXGBAs&sid=Ha7gSFkm-F1QeALWAABs HTTP/1.1" 200 219 0.000591
+(39645) accepted ('127.0.0.1', 51718)
+127.0.0.1 - - [12/Mar/2026 15:54:00] "GET /socket.io/?EIO=4&transport=websocket&sid=Ha7gSFkm-F1QeALWAABs HTTP/1.1" 200 0 1.016988
+127.0.0.1 - - [12/Mar/2026 15:54:01] "GET /socket.io/?EIO=4&transport=polling&t=PpXGBlz HTTP/1.1" 200 300 0.000265
+127.0.0.1 - - [12/Mar/2026 15:54:01] "POST /socket.io/?EIO=4&transport=polling&t=PpXGBm0&sid=krLkdO3aCtuU7KCGAABu HTTP/1.1" 200 219 0.000607
+127.0.0.1 - - [12/Mar/2026 15:54:02] "POST /socket.io/?EIO=4&transport=polling&t=PpXGB_g&sid=krLkdO3aCtuU7KCGAABu HTTP/1.1" 200 219 0.000216
+127.0.0.1 - - [12/Mar/2026 15:54:03] "GET /socket.io/?EIO=4&transport=polling&t=PpXGCFN HTTP/1.1" 200 300 0.000223
+127.0.0.1 - - [12/Mar/2026 15:54:04] "POST /socket.io/?EIO=4&transport=polling&t=PpXGCFU&sid=zVYJ5swgptv-aAbyAABw HTTP/1.1" 200 219 0.000538
+127.0.0.1 - - [12/Mar/2026 15:54:05] "POST /socket.io/?EIO=4&transport=polling&t=PpXGCVW&sid=zVYJ5swgptv-aAbyAABw HTTP/1.1" 200 219 0.000302
+127.0.0.1 - - [12/Mar/2026 15:54:06] "GET /socket.io/?EIO=4&transport=polling&t=PpXGCqm HTTP/1.1" 200 300 0.000976
+127.0.0.1 - - [12/Mar/2026 15:54:06] "POST /socket.io/?EIO=4&transport=polling&t=PpXGCqu&sid=GypvWmTtchnRYuSlAABy HTTP/1.1" 200 219 0.002544
+127.0.0.1 - - [12/Mar/2026 15:54:07] "POST /socket.io/?EIO=4&transport=polling&t=PpXGD4k&sid=GypvWmTtchnRYuSlAABy HTTP/1.1" 200 219 0.000364
+127.0.0.1 - - [12/Mar/2026 15:54:09] "GET /socket.io/?EIO=4&transport=polling&t=PpXGDaT HTTP/1.1" 200 300 0.001124
+127.0.0.1 - - [12/Mar/2026 15:54:09] "POST /socket.io/?EIO=4&transport=polling&t=PpXGDae&sid=WODsOEUIu-XG4pGOAAB0 HTTP/1.1" 200 219 0.005436
+127.0.0.1 - - [12/Mar/2026 15:54:10] "POST /socket.io/?EIO=4&transport=polling&t=PpXGDqh&sid=WODsOEUIu-XG4pGOAAB0 HTTP/1.1" 200 219 0.000963
+127.0.0.1 - - [12/Mar/2026 15:54:11] "GET /socket.io/?EIO=4&transport=polling&t=PpXGE5e HTTP/1.1" 200 300 0.000711
+127.0.0.1 - - [12/Mar/2026 15:54:11] "POST /socket.io/?EIO=4&transport=polling&t=PpXGE5k&sid=dL8ALKzoUZVW1jBIAAB2 HTTP/1.1" 200 219 0.002472
+(39645) accepted ('127.0.0.1', 34622)
+127.0.0.1 - - [12/Mar/2026 15:54:12] "GET /socket.io/?EIO=4&transport=websocket&sid=dL8ALKzoUZVW1jBIAAB2 HTTP/1.1" 200 0 1.008205
+127.0.0.1 - - [12/Mar/2026 15:54:13] "GET /socket.io/?EIO=4&transport=polling&t=PpXGEbI HTTP/1.1" 200 300 0.000776
+127.0.0.1 - - [12/Mar/2026 15:54:13] "POST /socket.io/?EIO=4&transport=polling&t=PpXGEbY&sid=fVwwzRG5TUeK3_4dAAB4 HTTP/1.1" 200 219 0.004123
+127.0.0.1 - - [12/Mar/2026 15:54:14] "POST /socket.io/?EIO=4&transport=polling&t=PpXGErd&sid=fVwwzRG5TUeK3_4dAAB4 HTTP/1.1" 200 219 0.000934
+127.0.0.1 - - [12/Mar/2026 15:54:15] "GET /socket.io/?EIO=4&transport=polling&t=PpXGF5q HTTP/1.1" 200 300 0.001051
+127.0.0.1 - - [12/Mar/2026 15:54:15] "POST /socket.io/?EIO=4&transport=polling&t=PpXGF5_&sid=BIiB9ge0SwEA_q2-AAB6 HTTP/1.1" 200 219 0.003704
+(39645) accepted ('127.0.0.1', 53954)
+127.0.0.1 - - [12/Mar/2026 15:54:16] "GET /socket.io/?EIO=4&transport=websocket&sid=BIiB9ge0SwEA_q2-AAB6 HTTP/1.1" 200 0 1.010411
+127.0.0.1 - - [12/Mar/2026 15:54:17] "GET /socket.io/?EIO=4&transport=polling&t=PpXGFbf HTTP/1.1" 200 300 0.000784
+127.0.0.1 - - [12/Mar/2026 15:54:17] "POST /socket.io/?EIO=4&transport=polling&t=PpXGFbl&sid=r71Fe40f7kLIp2bLAAB8 HTTP/1.1" 200 219 0.002120
+127.0.0.1 - - [12/Mar/2026 15:54:18] "POST /socket.io/?EIO=4&transport=polling&t=PpXGFrb&sid=r71Fe40f7kLIp2bLAAB8 HTTP/1.1" 200 219 0.000721
+127.0.0.1 - - [12/Mar/2026 15:54:19] "GET /socket.io/?EIO=4&transport=polling&t=PpXGG5e HTTP/1.1" 200 300 0.000214
+127.0.0.1 - - [12/Mar/2026 15:54:19] "POST /socket.io/?EIO=4&transport=polling&t=PpXGG5g&sid=tcODCWl8EHuQXHb2AAB- HTTP/1.1" 200 219 0.000491
+127.0.0.1 - - [12/Mar/2026 15:54:20] "POST /socket.io/?EIO=4&transport=polling&t=PpXGGLn&sid=tcODCWl8EHuQXHb2AAB- HTTP/1.1" 200 219 0.000310
+127.0.0.1 - - [12/Mar/2026 15:54:21] "GET /socket.io/?EIO=4&transport=polling&t=PpXGGbg HTTP/1.1" 200 300 0.000488
+127.0.0.1 - - [12/Mar/2026 15:54:21] "POST /socket.io/?EIO=4&transport=polling&t=PpXGGbl&sid=gBVQ7ZcmyntsdlceAACA HTTP/1.1" 200 219 0.001636
+127.0.0.1 - - [12/Mar/2026 15:54:22] "POST /socket.io/?EIO=4&transport=polling&t=PpXGGra&sid=gBVQ7ZcmyntsdlceAACA HTTP/1.1" 200 219 0.001001
+127.0.0.1 - - [12/Mar/2026 15:54:24] "GET /socket.io/?EIO=4&transport=polling&t=PpXGHLN HTTP/1.1" 200 300 0.000303
+127.0.0.1 - - [12/Mar/2026 15:54:24] "POST /socket.io/?EIO=4&transport=polling&t=PpXGHLQ&sid=2gDAEWX48xW5M5x0AACC HTTP/1.1" 200 219 0.000821
+127.0.0.1 - - [12/Mar/2026 15:54:25] "POST /socket.io/?EIO=4&transport=polling&t=PpXGHbW&sid=2gDAEWX48xW5M5x0AACC HTTP/1.1" 200 219 0.001285
+127.0.0.1 - - [12/Mar/2026 15:54:27] "GET /socket.io/?EIO=4&transport=polling&t=PpXGHyP HTTP/1.1" 200 300 0.000567
+127.0.0.1 - - [12/Mar/2026 15:54:27] "POST /socket.io/?EIO=4&transport=polling&t=PpXGHyS&sid=mCXmHyA5HQF_32CyAACE HTTP/1.1" 200 219 0.002266
+(39645) accepted ('127.0.0.1', 53144)
+127.0.0.1 - - [12/Mar/2026 15:54:28] "GET /socket.io/?EIO=4&transport=websocket&sid=mCXmHyA5HQF_32CyAACE HTTP/1.1" 200 0 1.004307
+127.0.0.1 - - [12/Mar/2026 15:54:30] "GET /socket.io/?EIO=4&transport=polling&t=PpXGIhZ HTTP/1.1" 200 300 0.001320
+127.0.0.1 - - [12/Mar/2026 15:54:30] "POST /socket.io/?EIO=4&transport=polling&t=PpXGIhk&sid=V7hZNNbx_YwzAkZyAACG HTTP/1.1" 200 219 0.003901
+127.0.0.1 - - [12/Mar/2026 15:54:31] "POST /socket.io/?EIO=4&transport=polling&t=PpXGIxn&sid=V7hZNNbx_YwzAkZyAACG HTTP/1.1" 200 219 0.000903
+127.0.0.1 - - [12/Mar/2026 15:54:32] "GET /socket.io/?EIO=4&transport=polling&t=PpXGJCb HTTP/1.1" 200 300 0.001030
+127.0.0.1 - - [12/Mar/2026 15:54:32] "POST /socket.io/?EIO=4&transport=polling&t=PpXGJCl&sid=9rpetqX7pkljMe_NAACI HTTP/1.1" 200 219 0.001799
+(39645) accepted ('127.0.0.1', 53162)
+127.0.0.1 - - [12/Mar/2026 15:54:33] "GET /socket.io/?EIO=4&transport=websocket&sid=9rpetqX7pkljMe_NAACI HTTP/1.1" 200 0 1.004545
+127.0.0.1 - - [12/Mar/2026 15:54:34] "GET /socket.io/?EIO=4&transport=polling&t=PpXGJiF HTTP/1.1" 200 300 0.000412
+127.0.0.1 - - [12/Mar/2026 15:54:34] "POST /socket.io/?EIO=4&transport=polling&t=PpXGJiI&sid=TKVzTjCOcAn5RNe0AACK HTTP/1.1" 200 219 0.000705
+127.0.0.1 - - [12/Mar/2026 15:54:35] "POST /socket.io/?EIO=4&transport=polling&t=PpXGJx-&sid=TKVzTjCOcAn5RNe0AACK HTTP/1.1" 200 219 0.000339
+127.0.0.1 - - [12/Mar/2026 15:54:36] "GET /socket.io/?EIO=4&transport=polling&t=PpXGKG7 HTTP/1.1" 200 300 0.001073
+127.0.0.1 - - [12/Mar/2026 15:54:36] "POST /socket.io/?EIO=4&transport=polling&t=PpXGKGH&sid=-S-EPgpSW5CHNiBMAACM HTTP/1.1" 200 219 0.000487
+127.0.0.1 - - [12/Mar/2026 15:54:37] "POST /socket.io/?EIO=4&transport=polling&t=PpXGKW7&sid=-S-EPgpSW5CHNiBMAACM HTTP/1.1" 200 219 0.000914
+127.0.0.1 - - [12/Mar/2026 15:54:39] "GET /socket.io/?EIO=4&transport=polling&t=PpXGKs1 HTTP/1.1" 200 300 0.001041
+127.0.0.1 - - [12/Mar/2026 15:54:39] "POST /socket.io/?EIO=4&transport=polling&t=PpXGKs9&sid=COPJ36num0TUFnSQAACO HTTP/1.1" 200 219 0.001795
+(39645) accepted ('127.0.0.1', 45404)
+127.0.0.1 - - [12/Mar/2026 15:54:40] "GET /socket.io/?EIO=4&transport=websocket&sid=COPJ36num0TUFnSQAACO HTTP/1.1" 200 0 1.005609
+127.0.0.1 - - [12/Mar/2026 15:54:41] "GET /socket.io/?EIO=4&transport=polling&t=PpXGLOP HTTP/1.1" 200 300 0.000381
+127.0.0.1 - - [12/Mar/2026 15:54:41] "POST /socket.io/?EIO=4&transport=polling&t=PpXGLOS&sid=QAmfnlqFNWBQn0fcAACQ HTTP/1.1" 200 219 0.001086
+127.0.0.1 - - [12/Mar/2026 15:54:42] "POST /socket.io/?EIO=4&transport=polling&t=PpXGLeC&sid=QAmfnlqFNWBQn0fcAACQ HTTP/1.1" 200 219 0.000948
+127.0.0.1 - - [12/Mar/2026 15:54:43] "GET /socket.io/?EIO=4&transport=polling&t=PpXGLza HTTP/1.1" 200 300 0.001403
+127.0.0.1 - - [12/Mar/2026 15:54:43] "POST /socket.io/?EIO=4&transport=polling&t=PpXGLzn&sid=raaiSUWL2AUMgChPAACS HTTP/1.1" 200 219 0.001603
+127.0.0.1 - - [12/Mar/2026 15:54:44] "POST /socket.io/?EIO=4&transport=polling&t=PpXGMDb&sid=raaiSUWL2AUMgChPAACS HTTP/1.1" 200 219 0.000958
+127.0.0.1 - - [12/Mar/2026 15:54:46] "GET /socket.io/?EIO=4&transport=polling&t=PpXGMjz HTTP/1.1" 200 300 0.001014
+127.0.0.1 - - [12/Mar/2026 15:54:46] "POST /socket.io/?EIO=4&transport=polling&t=PpXGMk6&sid=Lcxuop0Fgdw83dJGAACU HTTP/1.1" 200 219 0.001195
+127.0.0.1 - - [12/Mar/2026 15:54:47] "POST /socket.io/?EIO=4&transport=polling&t=PpXGMzp&sid=Lcxuop0Fgdw83dJGAACU HTTP/1.1" 200 219 0.000303
+127.0.0.1 - - [12/Mar/2026 15:54:48] "GET /socket.io/?EIO=4&transport=polling&t=PpXGNDT HTTP/1.1" 200 300 0.000479
+127.0.0.1 - - [12/Mar/2026 15:54:48] "POST /socket.io/?EIO=4&transport=polling&t=PpXGNDX&sid=vJ5yKWHJbbEjj_z8AACW HTTP/1.1" 200 219 0.001131
+(39645) accepted ('127.0.0.1', 56730)
+127.0.0.1 - - [12/Mar/2026 15:54:49] "GET /socket.io/?EIO=4&transport=websocket&sid=vJ5yKWHJbbEjj_z8AACW HTTP/1.1" 200 0 1.000610
+127.0.0.1 - - [12/Mar/2026 15:54:50] "GET /socket.io/?EIO=4&transport=polling&t=PpXGNiu HTTP/1.1" 200 300 0.001074
+127.0.0.1 - - [12/Mar/2026 15:54:50] "POST /socket.io/?EIO=4&transport=polling&t=PpXGNj9&sid=CDyCQQv5qjQFcD_9AACY HTTP/1.1" 200 219 0.002357
+127.0.0.1 - - [12/Mar/2026 15:54:51] "POST /socket.io/?EIO=4&transport=polling&t=PpXGNz4&sid=CDyCQQv5qjQFcD_9AACY HTTP/1.1" 200 219 0.000917
+127.0.0.1 - - [12/Mar/2026 15:54:52] "GET /socket.io/?EIO=4&transport=polling&t=PpXGOCm HTTP/1.1" 200 300 0.001077
+127.0.0.1 - - [12/Mar/2026 15:54:52] "POST /socket.io/?EIO=4&transport=polling&t=PpXGOCx&sid=hZNauXf7vViPS-HPAACa HTTP/1.1" 200 219 0.003155
+127.0.0.1 - - [12/Mar/2026 15:54:54] "POST /socket.io/?EIO=4&transport=polling&t=PpXGOSm&sid=hZNauXf7vViPS-HPAACa HTTP/1.1" 200 219 0.000525
+127.0.0.1 - - [12/Mar/2026 15:54:55] "GET /socket.io/?EIO=4&transport=polling&t=PpXGOiP HTTP/1.1" 200 300 0.000198
+127.0.0.1 - - [12/Mar/2026 15:54:55] "POST /socket.io/?EIO=4&transport=polling&t=PpXGOiS&sid=Ml0BDbGNk8xcbuMbAACc HTTP/1.1" 200 219 0.000751
+127.0.0.1 - - [12/Mar/2026 15:54:56] "POST /socket.io/?EIO=4&transport=polling&t=PpXGOy6&sid=Ml0BDbGNk8xcbuMbAACc HTTP/1.1" 200 219 0.001070
+127.0.0.1 - - [12/Mar/2026 15:54:57] "GET /socket.io/?EIO=4&transport=polling&t=PpXGPEQ HTTP/1.1" 200 300 0.001755
+127.0.0.1 - - [12/Mar/2026 15:54:57] "POST /socket.io/?EIO=4&transport=polling&t=PpXGPEe&sid=xetuW9J49qfN6I7OAACe HTTP/1.1" 200 219 0.002895
+127.0.0.1 - - [12/Mar/2026 15:54:58] "POST /socket.io/?EIO=4&transport=polling&t=PpXGPUS&sid=xetuW9J49qfN6I7OAACe HTTP/1.1" 200 219 0.000395
+127.0.0.1 - - [12/Mar/2026 15:54:59] "GET /socket.io/?EIO=4&transport=polling&t=PpXGPk6 HTTP/1.1" 200 300 0.000603
+127.0.0.1 - - [12/Mar/2026 15:54:59] "POST /socket.io/?EIO=4&transport=polling&t=PpXGPkB&sid=-ORUTvVcA3eTSDcWAACg HTTP/1.1" 200 219 0.001753
+127.0.0.1 - - [12/Mar/2026 15:55:00] "POST /socket.io/?EIO=4&transport=polling&t=PpXGP-1&sid=-ORUTvVcA3eTSDcWAACg HTTP/1.1" 200 219 0.000193
+127.0.0.1 - - [12/Mar/2026 15:55:01] "GET /socket.io/?EIO=4&transport=polling&t=PpXGQDg HTTP/1.1" 200 300 0.000276
+127.0.0.1 - - [12/Mar/2026 15:55:01] "POST /socket.io/?EIO=4&transport=polling&t=PpXGQDk&sid=AKgY2jAb9mYnU2biAACi HTTP/1.1" 200 219 0.000829
+127.0.0.1 - - [12/Mar/2026 15:55:02] "POST /socket.io/?EIO=4&transport=polling&t=PpXGQTp&sid=AKgY2jAb9mYnU2biAACi HTTP/1.1" 200 219 0.001319
+127.0.0.1 - - [12/Mar/2026 15:55:03] "GET /socket.io/?EIO=4&transport=polling&t=PpXGQjw HTTP/1.1" 200 300 0.001099
+127.0.0.1 - - [12/Mar/2026 15:55:03] "POST /socket.io/?EIO=4&transport=polling&t=PpXGQk3&sid=4iJe810COgn7mR01AACk HTTP/1.1" 200 219 0.002887
+127.0.0.1 - - [12/Mar/2026 15:55:04] "POST /socket.io/?EIO=4&transport=polling&t=PpXGQzt&sid=4iJe810COgn7mR01AACk HTTP/1.1" 200 219 0.000959
+127.0.0.1 - - [12/Mar/2026 15:55:05] "GET /socket.io/?EIO=4&transport=polling&t=PpXGRDY HTTP/1.1" 200 300 0.001278
+127.0.0.1 - - [12/Mar/2026 15:55:05] "POST /socket.io/?EIO=4&transport=polling&t=PpXGRDi&sid=vu07_4BNpl7mEq44AACm HTTP/1.1" 200 219 0.002874
+127.0.0.1 - - [12/Mar/2026 15:55:06] "POST /socket.io/?EIO=4&transport=polling&t=PpXGRTX&sid=vu07_4BNpl7mEq44AACm HTTP/1.1" 200 219 0.000895
+127.0.0.1 - - [12/Mar/2026 15:55:07] "GET /socket.io/?EIO=4&transport=polling&t=PpXGRka HTTP/1.1" 200 300 0.001081
+127.0.0.1 - - [12/Mar/2026 15:55:07] "POST /socket.io/?EIO=4&transport=polling&t=PpXGRkm&sid=Z4U2_kXyRQpP1axUAACo HTTP/1.1" 200 219 0.003101
+(39645) accepted ('127.0.0.1', 44070)
+127.0.0.1 - - [12/Mar/2026 15:55:08] "GET /socket.io/?EIO=4&transport=websocket&sid=Z4U2_kXyRQpP1axUAACo HTTP/1.1" 200 0 1.009860
+127.0.0.1 - - [12/Mar/2026 15:55:09] "GET /socket.io/?EIO=4&transport=polling&t=PpXGSEP HTTP/1.1" 200 300 0.001042
+127.0.0.1 - - [12/Mar/2026 15:55:09] "POST /socket.io/?EIO=4&transport=polling&t=PpXGSEZ&sid=mMnouTMCk4-4p2hKAACq HTTP/1.1" 200 219 0.002813
+127.0.0.1 - - [12/Mar/2026 15:55:10] "POST /socket.io/?EIO=4&transport=polling&t=PpXGSUU&sid=mMnouTMCk4-4p2hKAACq HTTP/1.1" 200 219 0.000493
+127.0.0.1 - - [12/Mar/2026 15:55:12] "GET /socket.io/?EIO=4&transport=polling&t=PpXGS-O HTTP/1.1" 200 300 0.000553
+127.0.0.1 - - [12/Mar/2026 15:55:12] "POST /socket.io/?EIO=4&transport=polling&t=PpXGS-T&sid=2IX9up7pwWnARt1cAACs HTTP/1.1" 200 219 0.000890
+(39645) accepted ('127.0.0.1', 44092)
+127.0.0.1 - - [12/Mar/2026 15:55:13] "GET /socket.io/?EIO=4&transport=websocket&sid=2IX9up7pwWnARt1cAACs HTTP/1.1" 200 0 1.013759
+127.0.0.1 - - [12/Mar/2026 15:55:14] "GET /socket.io/?EIO=4&transport=polling&t=PpXGTU1 HTTP/1.1" 200 300 0.000429
+127.0.0.1 - - [12/Mar/2026 15:55:14] "POST /socket.io/?EIO=4&transport=polling&t=PpXGTU5&sid=1urYd8mQtPzs549EAACu HTTP/1.1" 200 219 0.001809
+(39645) accepted ('127.0.0.1', 41248)
+127.0.0.1 - - [12/Mar/2026 15:55:15] "GET /socket.io/?EIO=4&transport=websocket&sid=1urYd8mQtPzs549EAACu HTTP/1.1" 200 0 1.003663
+127.0.0.1 - - [12/Mar/2026 15:55:17] "GET /socket.io/?EIO=4&transport=polling&t=PpXGUDV HTTP/1.1" 200 300 0.001497
+127.0.0.1 - - [12/Mar/2026 15:55:17] "POST /socket.io/?EIO=4&transport=polling&t=PpXGUDh&sid=p8UJiw0NwlP4khUfAACw HTTP/1.1" 200 219 0.002944
+127.0.0.1 - - [12/Mar/2026 15:55:18] "POST /socket.io/?EIO=4&transport=polling&t=PpXGUTe&sid=p8UJiw0NwlP4khUfAACw HTTP/1.1" 200 219 0.000938
+127.0.0.1 - - [12/Mar/2026 15:55:19] "GET /socket.io/?EIO=4&transport=polling&t=PpXGUnO HTTP/1.1" 200 300 0.001673
+127.0.0.1 - - [12/Mar/2026 15:55:19] "POST /socket.io/?EIO=4&transport=polling&t=PpXGUnb&sid=rVqwJAL36GKI9dLVAACy HTTP/1.1" 200 219 0.000741
+127.0.0.1 - - [12/Mar/2026 15:55:20] "POST /socket.io/?EIO=4&transport=polling&t=PpXGV1P&sid=rVqwJAL36GKI9dLVAACy HTTP/1.1" 200 219 0.001290
+127.0.0.1 - - [12/Mar/2026 15:55:22] "GET /socket.io/?EIO=4&transport=polling&t=PpXGVXB HTTP/1.1" 200 300 0.000315
+127.0.0.1 - - [12/Mar/2026 15:55:22] "POST /socket.io/?EIO=4&transport=polling&t=PpXGVXD&sid=XFn73CLvrKGmwHIrAAC0 HTTP/1.1" 200 219 0.000642
+127.0.0.1 - - [12/Mar/2026 15:55:23] "POST /socket.io/?EIO=4&transport=polling&t=PpXGVmv&sid=XFn73CLvrKGmwHIrAAC0 HTTP/1.1" 200 219 0.000190
+127.0.0.1 - - [12/Mar/2026 15:55:24] "GET /socket.io/?EIO=4&transport=polling&t=PpXGW0X HTTP/1.1" 200 300 0.000387
+127.0.0.1 - - [12/Mar/2026 15:55:24] "POST /socket.io/?EIO=4&transport=polling&t=PpXGW0b&sid=SZrtQc1QZdijFfjEAAC2 HTTP/1.1" 200 219 0.000948
+127.0.0.1 - - [12/Mar/2026 15:55:25] "POST /socket.io/?EIO=4&transport=polling&t=PpXGWGG&sid=SZrtQc1QZdijFfjEAAC2 HTTP/1.1" 200 219 0.001363
+127.0.0.1 - - [12/Mar/2026 15:55:27] "GET /socket.io/?EIO=4&transport=polling&t=PpXGWWM HTTP/1.1" 200 300 0.001694
+127.0.0.1 - - [12/Mar/2026 15:55:27] "POST /socket.io/?EIO=4&transport=polling&t=PpXGWWg&sid=hWvYFUHZe_lcuN_aAAC4 HTTP/1.1" 200 219 0.003165
+127.0.0.1 - - [12/Mar/2026 15:55:28] "POST /socket.io/?EIO=4&transport=polling&t=PpXGWmc&sid=hWvYFUHZe_lcuN_aAAC4 HTTP/1.1" 200 219 0.001088
+127.0.0.1 - - [12/Mar/2026 15:55:29] "GET /socket.io/?EIO=4&transport=polling&t=PpXGX5_ HTTP/1.1" 200 300 0.001030
+127.0.0.1 - - [12/Mar/2026 15:55:29] "POST /socket.io/?EIO=4&transport=polling&t=PpXGX6A&sid=cRccke7UisQE3MBiAAC6 HTTP/1.1" 200 219 0.002594
+127.0.0.1 - - [12/Mar/2026 15:55:30] "POST /socket.io/?EIO=4&transport=polling&t=PpXGXM3&sid=cRccke7UisQE3MBiAAC6 HTTP/1.1" 200 219 0.000947
+127.0.0.1 - - [12/Mar/2026 15:55:31] "GET /socket.io/?EIO=4&transport=polling&t=PpXGXbr HTTP/1.1" 200 300 0.001059
+127.0.0.1 - - [12/Mar/2026 15:55:31] "POST /socket.io/?EIO=4&transport=polling&t=PpXGXb-&sid=r4_0tuCpAhJI-9HeAAC8 HTTP/1.1" 200 219 0.002595
+127.0.0.1 - - [12/Mar/2026 15:55:32] "POST /socket.io/?EIO=4&transport=polling&t=PpXGXs1&sid=r4_0tuCpAhJI-9HeAAC8 HTTP/1.1" 200 219 0.000924
+127.0.0.1 - - [12/Mar/2026 15:55:33] "GET /socket.io/?EIO=4&transport=polling&t=PpXGY6W HTTP/1.1" 200 300 0.001031
+127.0.0.1 - - [12/Mar/2026 15:55:33] "POST /socket.io/?EIO=4&transport=polling&t=PpXGY6h&sid=vV3GrrTMCWh0SA4rAAC- HTTP/1.1" 200 219 0.002597
+127.0.0.1 - - [12/Mar/2026 15:55:34] "POST /socket.io/?EIO=4&transport=polling&t=PpXGYMd&sid=vV3GrrTMCWh0SA4rAAC- HTTP/1.1" 200 219 0.000912
+127.0.0.1 - - [12/Mar/2026 15:55:35] "GET /socket.io/?EIO=4&transport=polling&t=PpXGYgV HTTP/1.1" 200 300 0.000432
+127.0.0.1 - - [12/Mar/2026 15:55:35] "POST /socket.io/?EIO=4&transport=polling&t=PpXGYgZ&sid=oVS1EZfpbGdwB612AADA HTTP/1.1" 200 219 0.001620
+127.0.0.1 - - [12/Mar/2026 15:55:36] "POST /socket.io/?EIO=4&transport=polling&t=PpXGYwJ&sid=oVS1EZfpbGdwB612AADA HTTP/1.1" 200 219 0.000915
+127.0.0.1 - - [12/Mar/2026 15:55:37] "GET /socket.io/?EIO=4&transport=polling&t=PpXGZAG HTTP/1.1" 200 300 0.000230
+127.0.0.1 - - [12/Mar/2026 15:55:37] "POST /socket.io/?EIO=4&transport=polling&t=PpXGZAJ&sid=I-VKGa7gKX4Tb7jpAADC HTTP/1.1" 200 219 0.000696
+127.0.0.1 - - [12/Mar/2026 15:55:38] "POST /socket.io/?EIO=4&transport=polling&t=PpXGZQN&sid=I-VKGa7gKX4Tb7jpAADC HTTP/1.1" 200 219 0.000342
+127.0.0.1 - - [12/Mar/2026 15:55:39] "GET /socket.io/?EIO=4&transport=polling&t=PpXGZgH HTTP/1.1" 200 300 0.000820
+127.0.0.1 - - [12/Mar/2026 15:55:39] "POST /socket.io/?EIO=4&transport=polling&t=PpXGZgP&sid=DzKfpNcKmtF4DVx6AADE HTTP/1.1" 200 219 0.001770
+127.0.0.1 - - [12/Mar/2026 15:55:40] "POST /socket.io/?EIO=4&transport=polling&t=PpXGZwH&sid=DzKfpNcKmtF4DVx6AADE HTTP/1.1" 200 219 0.000357
+127.0.0.1 - - [12/Mar/2026 15:55:41] "GET /socket.io/?EIO=4&transport=polling&t=PpXGaAD HTTP/1.1" 200 300 0.001463
+127.0.0.1 - - [12/Mar/2026 15:55:41] "POST /socket.io/?EIO=4&transport=polling&t=PpXGaAO&sid=CGjh2PsqlBHsr-itAADG HTTP/1.1" 200 219 0.002589
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.1
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 81
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+127.0.0.1 - - [12/Mar/2026 15:55:42] "POST /socket.io/?EIO=4&transport=polling&t=PpXGaQG&sid=CGjh2PsqlBHsr-itAADG HTTP/1.1" 200 219 0.000957
+127.0.0.1 - - [12/Mar/2026 15:55:44] "GET /socket.io/?EIO=4&transport=polling&t=PpXGanY HTTP/1.1" 200 300 0.001581
+127.0.0.1 - - [12/Mar/2026 15:55:44] "POST /socket.io/?EIO=4&transport=polling&t=PpXGank&sid=yIS8GT2Cc8NTJErhAADI HTTP/1.1" 200 219 0.004170
+127.0.0.1 - - [12/Mar/2026 15:55:45] "POST /socket.io/?EIO=4&transport=polling&t=PpXGb1a&sid=yIS8GT2Cc8NTJErhAADI HTTP/1.1" 200 219 0.000245
+127.0.0.1 - - [12/Mar/2026 15:55:46] "GET /socket.io/?EIO=4&transport=polling&t=PpXGbHT HTTP/1.1" 200 300 0.000775
+127.0.0.1 - - [12/Mar/2026 15:55:46] "POST /socket.io/?EIO=4&transport=polling&t=PpXGbHa&sid=TqWAKYYVPLax-DNHAADK HTTP/1.1" 200 219 0.002260
+127.0.0.1 - - [12/Mar/2026 15:55:47] "POST /socket.io/?EIO=4&transport=polling&t=PpXGbXM&sid=TqWAKYYVPLax-DNHAADK HTTP/1.1" 200 219 0.000929
+127.0.0.1 - - [12/Mar/2026 15:55:49] "GET /socket.io/?EIO=4&transport=polling&t=PpXGc1M HTTP/1.1" 200 300 0.001664
+127.0.0.1 - - [12/Mar/2026 15:55:49] "POST /socket.io/?EIO=4&transport=polling&t=PpXGc1a&sid=xxQhm-jdw30_bUZ6AADM HTTP/1.1" 200 219 0.002698
+(39645) accepted ('127.0.0.1', 51964)
+127.0.0.1 - - [12/Mar/2026 15:55:50] "GET /socket.io/?EIO=4&transport=websocket&sid=xxQhm-jdw30_bUZ6AADM HTTP/1.1" 200 0 0.679925
+127.0.0.1 - - [12/Mar/2026 15:55:51] "GET /socket.io/?EIO=4&transport=polling&t=PpXGcbk HTTP/1.1" 200 300 0.001073
+127.0.0.1 - - [12/Mar/2026 15:55:51] "POST /socket.io/?EIO=4&transport=polling&t=PpXGcbu&sid=FkiIPMcdLTy90hV2AADO HTTP/1.1" 200 219 0.003154
+127.0.0.1 - - [12/Mar/2026 15:55:52] "POST /socket.io/?EIO=4&transport=polling&t=PpXGcrn&sid=FkiIPMcdLTy90hV2AADO HTTP/1.1" 200 219 0.000215
+127.0.0.1 - - [12/Mar/2026 15:55:55] "GET /socket.io/?EIO=4&transport=polling&t=PpXGdLr HTTP/1.1" 200 300 0.000558
+127.0.0.1 - - [12/Mar/2026 15:55:55] "POST /socket.io/?EIO=4&transport=polling&t=PpXGdLw&sid=rWUsnw9wSPbEjwzDAADQ HTTP/1.1" 200 219 0.001664
+(39645) accepted ('127.0.0.1', 42028)
+127.0.0.1 - - [12/Mar/2026 15:55:56] "GET /socket.io/?EIO=4&transport=websocket&sid=rWUsnw9wSPbEjwzDAADQ HTTP/1.1" 200 0 1.007684
+127.0.0.1 - - [12/Mar/2026 15:55:57] "GET /socket.io/?EIO=4&transport=polling&t=PpXGdsl HTTP/1.1" 200 300 0.001092
+127.0.0.1 - - [12/Mar/2026 15:55:57] "POST /socket.io/?EIO=4&transport=polling&t=PpXGdsv&sid=V_nKZPCblPe3yYV8AADS HTTP/1.1" 200 219 0.002788
+(39645) accepted ('127.0.0.1', 42030)
+127.0.0.1 - - [12/Mar/2026 15:55:58] "GET /socket.io/?EIO=4&transport=websocket&sid=V_nKZPCblPe3yYV8AADS HTTP/1.1" 200 0 1.010986
+127.0.0.1 - - [12/Mar/2026 15:55:59] "GET /socket.io/?EIO=4&transport=polling&t=PpXGeMV HTTP/1.1" 200 300 0.000625
+127.0.0.1 - - [12/Mar/2026 15:55:59] "POST /socket.io/?EIO=4&transport=polling&t=PpXGeMe&sid=4S6iyK0D08gmmUmiAADU HTTP/1.1" 200 219 0.000471
+127.0.0.1 - - [12/Mar/2026 15:56:00] "POST /socket.io/?EIO=4&transport=polling&t=PpXGecJ&sid=4S6iyK0D08gmmUmiAADU HTTP/1.1" 200 219 0.000973
+127.0.0.1 - - [12/Mar/2026 15:56:01] "GET /socket.io/?EIO=4&transport=polling&t=PpXGexj HTTP/1.1" 200 300 0.001116
+127.0.0.1 - - [12/Mar/2026 15:56:01] "POST /socket.io/?EIO=4&transport=polling&t=PpXGexu&sid=iMbTXFvEUsAT-LxzAADW HTTP/1.1" 200 219 0.002625
+127.0.0.1 - - [12/Mar/2026 15:56:02] "POST /socket.io/?EIO=4&transport=polling&t=PpXGfBq&sid=iMbTXFvEUsAT-LxzAADW HTTP/1.1" 200 219 0.001061
+127.0.0.1 - - [12/Mar/2026 15:56:03] "GET /socket.io/?EIO=4&transport=polling&t=PpXGfRm HTTP/1.1" 200 300 0.001185
+127.0.0.1 - - [12/Mar/2026 15:56:03] "POST /socket.io/?EIO=4&transport=polling&t=PpXGfRx&sid=R9zoj8vJWHT8ouYtAADY HTTP/1.1" 200 219 0.004393
+127.0.0.1 - - [12/Mar/2026 15:56:04] "POST /socket.io/?EIO=4&transport=polling&t=PpXGfhr&sid=R9zoj8vJWHT8ouYtAADY HTTP/1.1" 200 219 0.000969
+127.0.0.1 - - [12/Mar/2026 15:56:05] "GET /socket.io/?EIO=4&transport=polling&t=PpXGf_Z HTTP/1.1" 200 300 0.001058
+127.0.0.1 - - [12/Mar/2026 15:56:05] "POST /socket.io/?EIO=4&transport=polling&t=PpXGf_k&sid=swtHbCxM_Hx3t1qoAADa HTTP/1.1" 200 219 0.003677
+127.0.0.1 - - [12/Mar/2026 15:56:06] "POST /socket.io/?EIO=4&transport=polling&t=PpXGgFg&sid=swtHbCxM_Hx3t1qoAADa HTTP/1.1" 200 219 0.000951
+127.0.0.1 - - [12/Mar/2026 15:56:07] "GET /socket.io/?EIO=4&transport=polling&t=PpXGgVc HTTP/1.1" 200 300 0.001034
+127.0.0.1 - - [12/Mar/2026 15:56:07] "POST /socket.io/?EIO=4&transport=polling&t=PpXGgVl&sid=VRSHsWb6xUWuaJqcAADc HTTP/1.1" 200 219 0.002274
+(39645) accepted ('127.0.0.1', 46982)
+127.0.0.1 - - [12/Mar/2026 15:56:08] "GET /socket.io/?EIO=4&transport=websocket&sid=VRSHsWb6xUWuaJqcAADc HTTP/1.1" 200 0 1.006890
+127.0.0.1 - - [12/Mar/2026 15:56:10] "GET /socket.io/?EIO=4&transport=polling&t=PpXGhFe HTTP/1.1" 200 300 0.000242
+127.0.0.1 - - [12/Mar/2026 15:56:10] "POST /socket.io/?EIO=4&transport=polling&t=PpXGhFg&sid=ykeCEmhSEuR-tPMhAADe HTTP/1.1" 200 219 0.000580
+127.0.0.1 - - [12/Mar/2026 15:56:12] "POST /socket.io/?EIO=4&transport=polling&t=PpXGhVZ&sid=ykeCEmhSEuR-tPMhAADe HTTP/1.1" 200 219 0.000361
+127.0.0.1 - - [12/Mar/2026 15:56:13] "GET /socket.io/?EIO=4&transport=polling&t=PpXGhlG HTTP/1.1" 200 300 0.001091
+127.0.0.1 - - [12/Mar/2026 15:56:13] "POST /socket.io/?EIO=4&transport=polling&t=PpXGhlR&sid=ByW0MJFFPA-lOpCkAADg HTTP/1.1" 200 219 0.002595
+127.0.0.1 - - [12/Mar/2026 15:56:14] "POST /socket.io/?EIO=4&transport=polling&t=PpXGh_J&sid=ByW0MJFFPA-lOpCkAADg HTTP/1.1" 200 219 0.000911
+127.0.0.1 - - [12/Mar/2026 15:56:16] "GET /socket.io/?EIO=4&transport=polling&t=PpXGiVH HTTP/1.1" 200 300 0.000329
+127.0.0.1 - - [12/Mar/2026 15:56:16] "POST /socket.io/?EIO=4&transport=polling&t=PpXGiVJ&sid=k7yUgWscbxUyeBuPAADi HTTP/1.1" 200 219 0.001001
+(39645) accepted ('127.0.0.1', 58314)
+127.0.0.1 - - [12/Mar/2026 15:56:17] "GET /socket.io/?EIO=4&transport=websocket&sid=k7yUgWscbxUyeBuPAADi HTTP/1.1" 200 0 1.003023
+127.0.0.1 - - [12/Mar/2026 15:56:18] "GET /socket.io/?EIO=4&transport=polling&t=PpXGi-w HTTP/1.1" 200 300 0.001053
+127.0.0.1 - - [12/Mar/2026 15:56:18] "POST /socket.io/?EIO=4&transport=polling&t=PpXGi_4&sid=SkkuS_EF9hOOLoZGAADk HTTP/1.1" 200 219 0.004254
+127.0.0.1 - - [12/Mar/2026 15:56:19] "POST /socket.io/?EIO=4&transport=polling&t=PpXGjF2&sid=SkkuS_EF9hOOLoZGAADk HTTP/1.1" 200 219 0.000839
+127.0.0.1 - - [12/Mar/2026 15:56:21] "GET /socket.io/?EIO=4&transport=polling&t=PpXGjlI HTTP/1.1" 200 300 0.001087
+127.0.0.1 - - [12/Mar/2026 15:56:21] "POST /socket.io/?EIO=4&transport=polling&t=PpXGjlR&sid=0iVYzVpx5sffV_67AADm HTTP/1.1" 200 219 0.005181
+127.0.0.1 - - [12/Mar/2026 15:56:22] "POST /socket.io/?EIO=4&transport=polling&t=PpXGj_L&sid=0iVYzVpx5sffV_67AADm HTTP/1.1" 200 219 0.000267
+127.0.0.1 - - [12/Mar/2026 15:56:23] "GET /socket.io/?EIO=4&transport=polling&t=PpXGkEz HTTP/1.1" 200 300 0.000335
+127.0.0.1 - - [12/Mar/2026 15:56:23] "POST /socket.io/?EIO=4&transport=polling&t=PpXGkF0&sid=6rjkJosfGGmPOLZRAADo HTTP/1.1" 200 219 0.000804
+127.0.0.1 - - [12/Mar/2026 15:56:24] "POST /socket.io/?EIO=4&transport=polling&t=PpXGkUi&sid=6rjkJosfGGmPOLZRAADo HTTP/1.1" 200 219 0.000715
+127.0.0.1 - - [12/Mar/2026 15:56:26] "GET /socket.io/?EIO=4&transport=polling&t=PpXGk-c HTTP/1.1" 200 300 0.001056
+127.0.0.1 - - [12/Mar/2026 15:56:26] "POST /socket.io/?EIO=4&transport=polling&t=PpXGk-m&sid=e8O8OWNmPw0DaeX2AADq HTTP/1.1" 200 219 0.003016
+127.0.0.1 - - [12/Mar/2026 15:56:27] "POST /socket.io/?EIO=4&transport=polling&t=PpXGlEd&sid=e8O8OWNmPw0DaeX2AADq HTTP/1.1" 200 219 0.000250
+127.0.0.1 - - [12/Mar/2026 15:56:28] "GET /socket.io/?EIO=4&transport=polling&t=PpXGlUI HTTP/1.1" 200 300 0.001041
+127.0.0.1 - - [12/Mar/2026 15:56:28] "POST /socket.io/?EIO=4&transport=polling&t=PpXGlUS&sid=rXFMC2lfudJn2KWBAADs HTTP/1.1" 200 219 0.002774
+127.0.0.1 - - [12/Mar/2026 15:56:29] "POST /socket.io/?EIO=4&transport=polling&t=PpXGlkP&sid=rXFMC2lfudJn2KWBAADs HTTP/1.1" 200 219 0.000938
+127.0.0.1 - - [12/Mar/2026 15:56:31] "GET /socket.io/?EIO=4&transport=polling&t=PpXGmEd HTTP/1.1" 200 300 0.001147
+127.0.0.1 - - [12/Mar/2026 15:56:31] "POST /socket.io/?EIO=4&transport=polling&t=PpXGmEo&sid=IQ24H48ylLVzh1uCAADu HTTP/1.1" 200 219 0.003050
+(39645) accepted ('127.0.0.1', 53926)
+127.0.0.1 - - [12/Mar/2026 15:56:32] "GET /socket.io/?EIO=4&transport=websocket&sid=IQ24H48ylLVzh1uCAADu HTTP/1.1" 200 0 1.023773
+127.0.0.1 - - [12/Mar/2026 15:56:33] "GET /socket.io/?EIO=4&transport=polling&t=PpXGmov HTTP/1.1" 200 300 0.001588
+127.0.0.1 - - [12/Mar/2026 15:56:33] "POST /socket.io/?EIO=4&transport=polling&t=PpXGmp3&sid=W17Xuvl75ua6l92wAADw HTTP/1.1" 200 219 0.002265
+127.0.0.1 - - [12/Mar/2026 15:56:34] "POST /socket.io/?EIO=4&transport=polling&t=PpXGn3D&sid=W17Xuvl75ua6l92wAADw HTTP/1.1" 200 219 0.000808
+127.0.0.1 - - [12/Mar/2026 15:56:36] "GET /socket.io/?EIO=4&transport=polling&t=PpXGnZC HTTP/1.1" 200 300 0.000313
+127.0.0.1 - - [12/Mar/2026 15:56:36] "POST /socket.io/?EIO=4&transport=polling&t=PpXGnZE&sid=SJ2b1_R-BsQlwxMDAADy HTTP/1.1" 200 219 0.000633
+127.0.0.1 - - [12/Mar/2026 15:56:37] "POST /socket.io/?EIO=4&transport=polling&t=PpXGnp8&sid=SJ2b1_R-BsQlwxMDAADy HTTP/1.1" 200 219 0.000431
+127.0.0.1 - - [12/Mar/2026 15:56:39] "GET /socket.io/?EIO=4&transport=polling&t=PpXGo8l HTTP/1.1" 200 300 0.001524
+127.0.0.1 - - [12/Mar/2026 15:56:39] "POST /socket.io/?EIO=4&transport=polling&t=PpXGo8v&sid=28sqQgMiipmAbD-1AAD0 HTTP/1.1" 200 219 0.003110
+127.0.0.1 - - [12/Mar/2026 15:56:40] "POST /socket.io/?EIO=4&transport=polling&t=PpXGoOq&sid=28sqQgMiipmAbD-1AAD0 HTTP/1.1" 200 219 0.000870
+127.0.0.1 - - [12/Mar/2026 15:56:42] "GET /socket.io/?EIO=4&transport=polling&t=PpXGouc HTTP/1.1" 200 300 0.000191
+127.0.0.1 - - [12/Mar/2026 15:56:42] "POST /socket.io/?EIO=4&transport=polling&t=PpXGouf&sid=qsGsHlmDvabX7PAuAAD2 HTTP/1.1" 200 219 0.000508
+127.0.0.1 - - [12/Mar/2026 15:56:43] "POST /socket.io/?EIO=4&transport=polling&t=PpXGp8K&sid=qsGsHlmDvabX7PAuAAD2 HTTP/1.1" 200 219 0.000958
+127.0.0.1 - - [12/Mar/2026 15:56:44] "GET /socket.io/?EIO=4&transport=polling&t=PpXGpN- HTTP/1.1" 200 300 0.001047
+127.0.0.1 - - [12/Mar/2026 15:56:44] "POST /socket.io/?EIO=4&transport=polling&t=PpXGpO8&sid=lFNw2rpWFhvA97beAAD4 HTTP/1.1" 200 219 0.004468
+(39645) accepted ('127.0.0.1', 33422)
+127.0.0.1 - - [12/Mar/2026 15:56:45] "GET /socket.io/?EIO=4&transport=websocket&sid=lFNw2rpWFhvA97beAAD4 HTTP/1.1" 200 0 1.000020
+127.0.0.1 - - [12/Mar/2026 15:56:47] "GET /socket.io/?EIO=4&transport=polling&t=PpXGq7n HTTP/1.1" 200 300 0.000303
+127.0.0.1 - - [12/Mar/2026 15:56:47] "POST /socket.io/?EIO=4&transport=polling&t=PpXGq7r&sid=6_G6DFkUNnuy3zT2AAD6 HTTP/1.1" 200 219 0.000979
+(39645) accepted ('127.0.0.1', 45972)
+127.0.0.1 - - [12/Mar/2026 15:56:48] "GET /socket.io/?EIO=4&transport=websocket&sid=6_G6DFkUNnuy3zT2AAD6 HTTP/1.1" 200 0 1.002955
+127.0.0.1 - - [12/Mar/2026 15:56:49] "GET /socket.io/?EIO=4&transport=polling&t=PpXGqhk HTTP/1.1" 200 300 0.000495
+127.0.0.1 - - [12/Mar/2026 15:56:49] "POST /socket.io/?EIO=4&transport=polling&t=PpXGqho&sid=RqL025LuMmq9SH4jAAD8 HTTP/1.1" 200 219 0.001074
+(39645) accepted ('127.0.0.1', 45978)
+127.0.0.1 - - [12/Mar/2026 15:56:50] "GET /socket.io/?EIO=4&transport=websocket&sid=RqL025LuMmq9SH4jAAD8 HTTP/1.1" 200 0 1.002590
+127.0.0.1 - - [12/Mar/2026 15:56:52] "GET /socket.io/?EIO=4&transport=polling&t=PpXGrRG HTTP/1.1" 200 300 0.000352
+127.0.0.1 - - [12/Mar/2026 15:56:52] "POST /socket.io/?EIO=4&transport=polling&t=PpXGrRJ&sid=uJJ8-CVXqeAhucyzAAD- HTTP/1.1" 200 219 0.000729
+(39645) accepted ('127.0.0.1', 45994)
+127.0.0.1 - - [12/Mar/2026 15:56:53] "GET /socket.io/?EIO=4&transport=websocket&sid=uJJ8-CVXqeAhucyzAAD- HTTP/1.1" 200 0 1.001188
+127.0.0.1 - - [12/Mar/2026 15:56:54] "GET /socket.io/?EIO=4&transport=polling&t=PpXGr-x HTTP/1.1" 200 300 0.000788
+127.0.0.1 - - [12/Mar/2026 15:56:54] "POST /socket.io/?EIO=4&transport=polling&t=PpXGr_2&sid=mmmrFhTNBGc4DAf6AAEA HTTP/1.1" 200 219 0.002006
+127.0.0.1 - - [12/Mar/2026 15:56:55] "POST /socket.io/?EIO=4&transport=polling&t=PpXGsEp&sid=mmmrFhTNBGc4DAf6AAEA HTTP/1.1" 200 219 0.000654
+127.0.0.1 - - [12/Mar/2026 15:56:58] "GET /socket.io/?EIO=4&transport=polling&t=PpXGskf HTTP/1.1" 200 300 0.001316
+127.0.0.1 - - [12/Mar/2026 15:56:58] "POST /socket.io/?EIO=4&transport=polling&t=PpXGskp&sid=D_YNP9yeDxyYrCLSAAEC HTTP/1.1" 200 219 0.002913
+127.0.0.1 - - [12/Mar/2026 15:56:59] "POST /socket.io/?EIO=4&transport=polling&t=PpXGs-e&sid=D_YNP9yeDxyYrCLSAAEC HTTP/1.1" 200 219 0.000439
+127.0.0.1 - - [12/Mar/2026 15:57:00] "GET /socket.io/?EIO=4&transport=polling&t=PpXGtEH HTTP/1.1" 200 300 0.000247
+127.0.0.1 - - [12/Mar/2026 15:57:00] "POST /socket.io/?EIO=4&transport=polling&t=PpXGtEJ&sid=dzUephF3lmlREOWfAAEE HTTP/1.1" 200 219 0.000771
+127.0.0.1 - - [12/Mar/2026 15:57:01] "POST /socket.io/?EIO=4&transport=polling&t=PpXGtTz&sid=dzUephF3lmlREOWfAAEE HTTP/1.1" 200 219 0.000192
+127.0.0.1 - - [12/Mar/2026 15:57:03] "GET /socket.io/?EIO=4&transport=polling&t=PpXGtzp HTTP/1.1" 200 300 0.001117
+127.0.0.1 - - [12/Mar/2026 15:57:03] "POST /socket.io/?EIO=4&transport=polling&t=PpXGtz-&sid=9Ph-5pEd2Wn_ShOnAAEG HTTP/1.1" 200 219 0.002593
+(39645) accepted ('127.0.0.1', 54466)
+127.0.0.1 - - [12/Mar/2026 15:57:04] "GET /socket.io/?EIO=4&transport=websocket&sid=9Ph-5pEd2Wn_ShOnAAEG HTTP/1.1" 200 0 1.005031
+127.0.0.1 - - [12/Mar/2026 15:57:05] "GET /socket.io/?EIO=4&transport=polling&t=PpXGuTS HTTP/1.1" 200 300 0.001054
+127.0.0.1 - - [12/Mar/2026 15:57:05] "POST /socket.io/?EIO=4&transport=polling&t=PpXGuTd&sid=M_si5ucWYgrmugC-AAEI HTTP/1.1" 200 219 0.002836
+(39645) accepted ('127.0.0.1', 59706)
+127.0.0.1 - - [12/Mar/2026 15:57:06] "GET /socket.io/?EIO=4&transport=websocket&sid=M_si5ucWYgrmugC-AAEI HTTP/1.1" 200 0 1.002961
+127.0.0.1 - - [12/Mar/2026 15:57:08] "GET /socket.io/?EIO=4&transport=polling&t=PpXGvD0 HTTP/1.1" 200 300 0.001463
+127.0.0.1 - - [12/Mar/2026 15:57:08] "POST /socket.io/?EIO=4&transport=polling&t=PpXGvDC&sid=Vps6qmb4tqDRggePAAEK HTTP/1.1" 200 219 0.002125
+(39645) accepted ('127.0.0.1', 59720)
+127.0.0.1 - - [12/Mar/2026 15:57:09] "GET /socket.io/?EIO=4&transport=websocket&sid=Vps6qmb4tqDRggePAAEK HTTP/1.1" 200 0 1.005808
+127.0.0.1 - - [12/Mar/2026 15:57:10] "GET /socket.io/?EIO=4&transport=polling&t=PpXGvii HTTP/1.1" 200 300 0.000224
+127.0.0.1 - - [12/Mar/2026 15:57:10] "POST /socket.io/?EIO=4&transport=polling&t=PpXGvim&sid=Z-ffKH4bvOCUUTBGAAEM HTTP/1.1" 200 219 0.002571
+(39645) accepted ('127.0.0.1', 59732)
+127.0.0.1 - - [12/Mar/2026 15:57:11] "GET /socket.io/?EIO=4&transport=websocket&sid=Z-ffKH4bvOCUUTBGAAEM HTTP/1.1" 200 0 1.001359
+127.0.0.1 - - [12/Mar/2026 15:57:13] "GET /socket.io/?EIO=4&transport=polling&t=PpXGwSE HTTP/1.1" 200 300 0.000190
+127.0.0.1 - - [12/Mar/2026 15:57:13] "POST /socket.io/?EIO=4&transport=polling&t=PpXGwSN&sid=fBeCxPHsWYmMEqTMAAEO HTTP/1.1" 200 219 0.001333
+(39645) accepted ('127.0.0.1', 59736)
+127.0.0.1 - - [12/Mar/2026 15:57:14] "GET /socket.io/?EIO=4&transport=websocket&sid=fBeCxPHsWYmMEqTMAAEO HTTP/1.1" 200 0 1.004185
+127.0.0.1 - - [12/Mar/2026 15:57:15] "GET /socket.io/?EIO=4&transport=polling&t=PpXGwyk HTTP/1.1" 200 300 0.001104
+127.0.0.1 - - [12/Mar/2026 15:57:15] "POST /socket.io/?EIO=4&transport=polling&t=PpXGwyu&sid=ihcjtW660k6-bIFRAAEQ HTTP/1.1" 200 219 0.002799
+127.0.0.1 - - [12/Mar/2026 15:57:16] "POST /socket.io/?EIO=4&transport=polling&t=PpXGxCi&sid=ihcjtW660k6-bIFRAAEQ HTTP/1.1" 200 219 0.000213
+127.0.0.1 - - [12/Mar/2026 15:57:18] "GET /socket.io/?EIO=4&transport=polling&t=PpXGxiY HTTP/1.1" 200 300 0.000256
+127.0.0.1 - - [12/Mar/2026 15:57:18] "POST /socket.io/?EIO=4&transport=polling&t=PpXGxie&sid=TFYyMe824hCOgSHuAAES HTTP/1.1" 200 219 0.004221
+127.0.0.1 - - [12/Mar/2026 15:57:19] "POST /socket.io/?EIO=4&transport=polling&t=PpXGxyQ&sid=TFYyMe824hCOgSHuAAES HTTP/1.1" 200 219 0.000916
+127.0.0.1 - - [12/Mar/2026 15:57:20] "GET /socket.io/?EIO=4&transport=polling&t=PpXGyF0 HTTP/1.1" 200 300 0.001018
+127.0.0.1 - - [12/Mar/2026 15:57:20] "POST /socket.io/?EIO=4&transport=polling&t=PpXGyFA&sid=AjDecZ58sXA5zB1TAAEU HTTP/1.1" 200 219 0.002424
+127.0.0.1 - - [12/Mar/2026 15:57:20] "GET /socket.io/?EIO=4&transport=polling&t=PpXGyFD&sid=AjDecZ58sXA5zB1TAAEU HTTP/1.1" 200 312 0.000586
+(39645) accepted ('127.0.0.1', 35496)
+127.0.0.1 - - [12/Mar/2026 15:57:20] "GET /socket.io/?EIO=4&transport=polling&t=PpXGyFS&sid=AjDecZ58sXA5zB1TAAEU HTTP/1.1" 200 181 0.000644
+127.0.0.1 - - [12/Mar/2026 15:57:20] "GET /socket.io/?EIO=4&transport=polling&t=PpXGyFa&sid=AjDecZ58sXA5zB1TAAEU HTTP/1.1" 200 181 0.000330
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 81
+ Message received - Topic: demo/feeds/V2 | Message: 28.0
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Thiết bị Web đã kết nối (WebSocket).
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+127.0.0.1 - - [12/Mar/2026 15:59:23] "GET /socket.io/?EIO=4&transport=websocket&sid=AjDecZ58sXA5zB1TAAEU HTTP/1.1" 200 0 122.719278
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 87
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 82
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 85
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 84
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 83
+ Message received - Topic: demo/feeds/V2 | Message: 27.9
+ Message received - Topic: demo/feeds/V1 | Message: 86
+ Message received - Topic: demo/feeds/V2 | Message: 27.9

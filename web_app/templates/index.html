@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Dashboard - AIoT Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Socket.IO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar glass-panel">
+            <div class="logo">
+                <i class="fa-solid fa-microchip"></i>
+                <span>Smart AIoT</span>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History (M4)</a></li>
+                <li><a href="#"><i class="fa-solid fa-brain"></i> Analytics (M5)</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar glass-panel">
+                <h1>Hệ Thống Giám Sát Real-time (Module 1)</h1>
+                <div class="status-indicator">
+                    <span class="pulse-dot" id="connection-status"></span>
+                    <span id="status-text">Đang kết nối...</span>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- V2: Nhiet do -->
+                <div class="widget glass-panel">
+                    <div class="widget-header">
+                        <i class="fa-solid fa-temperature-half widget-icon temp-icon"></i>
+                        <h3>Độ ẩm / Nhiệt Độ (DHT20)</h3>
+                    </div>
+                    <div class="widget-body">
+                        <div class="value-display">
+                            <span id="temp-value">--</span>
+                            <span class="unit">°C</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar temp-bar" id="temp-progress" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- V1: Do am / Anh sang -->
+                <div class="widget glass-panel">
+                    <div class="widget-header">
+                        <i class="fa-solid fa-droplet widget-icon humid-icon"></i>
+                        <h3>Ánh Sáng</h3>
+                    </div>
+                    <div class="widget-body">
+                        <div class="value-display">
+                            <span id="humid-value">--</span>
+                            <span class="unit">%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar humid-bar" id="humid-progress" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra Space for Module 2/3 (Devices) -->
+                <div class="widget glass-panel device-control">
+                    <div class="widget-header">
+                        <i class="fa-solid fa-house-signal widget-icon device-icon"></i>
+                        <h3>Trạng Thái Thiết Bị</h3>
+                    </div>
+                    <div class="widget-body">
+                        <p class="placeholder-text">Sẵn sàng tích hợp Module 3 (Điều khiển Quạt/Đèn)</p>
+                    </div>
+                </div>
+
+                <!-- Chart Area -->
+                <div class="widget glass-panel chart-widget">
+                    <div class="widget-header">
+                        <i class="fa-solid fa-chart-line widget-icon chart-icon"></i>
+                        <h3>Biểu đồ Diễn Biến Theo Thời Gian</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="realtimeChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Inject initial data from Flask safely without confusing the IDE IDE -->
+    <script id="initial-data-script" type="application/json">
+        {{ initial_data | tojson | safe }}
+    </script>
+    <script>
+        const initialData = JSON.parse(document.getElementById('initial-data-script').textContent);
+    </script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
