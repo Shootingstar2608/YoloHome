@@ -21,6 +21,7 @@ MQTT_PASSWORD = "8888"
 # Topics format: <username>/feeds/<topic_name>
 MQTT_TOPIC_V1 = "demo/feeds/V1"  # Do am / Anh sang
 MQTT_TOPIC_V2 = "demo/feeds/V2"  # Nhiet do
+MQTT_TOPIC_V3 = "demo/feeds/V3"  # Chuyen dong
 
 # Store the latest data
 latest_data = {
@@ -34,7 +35,8 @@ def on_connect(client, userdata, flags, rc):
         print(" Thành công kết nối với MQTT Broker!")
         client.subscribe(MQTT_TOPIC_V1)
         client.subscribe(MQTT_TOPIC_V2)
-        print(f" Đã đăng ký (subscribe) các kênh: {MQTT_TOPIC_V1}, {MQTT_TOPIC_V2}")
+        client.subscribe(MQTT_TOPIC_V3)
+        print(f" Đã đăng ký (subscribe) các kênh: {MQTT_TOPIC_V1}, {MQTT_TOPIC_V2}, {MQTT_TOPIC_V3}")
     else:
         print(f" Kết nối thất bại, mã lỗi: {rc}")
 
@@ -50,6 +52,9 @@ def on_message(client, userdata, msg):
     elif topic == MQTT_TOPIC_V2:
         latest_data["V2"] = payload
         socketio.emit('sensor_update', {'topic': 'V2', 'value': payload})
+    elif topic == MQTT_TOPIC_V3:
+        if payload == "1":
+            socketio.emit('motion_detected', {'status': 'motion'})
 
 # Setup MQTT Client
 mqtt_client = mqtt.Client()

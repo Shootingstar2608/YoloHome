@@ -5,27 +5,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // DOM Elements
     const statusDot = document.getElementById('connection-status');
     const statusText = document.getElementById('status-text');
-    
+
     const tempValueDOM = document.getElementById('temp-value');
     const tempProgress = document.getElementById('temp-progress');
-    
+
     const humidValueDOM = document.getElementById('humid-value');
     const humidProgress = document.getElementById('humid-progress');
 
     // === Chart.js Setup ===
     const ctx = document.getElementById('realtimeChart').getContext('2d');
-    
+
     // Gradient configs for chart
     const gradientTemp = ctx.createLinearGradient(0, 0, 0, 400);
-    gradientTemp.addColorStop(0, 'rgba(239, 68, 68, 0.5)');   
+    gradientTemp.addColorStop(0, 'rgba(239, 68, 68, 0.5)');
     gradientTemp.addColorStop(1, 'rgba(239, 68, 68, 0.0)');
 
     const gradientHumid = ctx.createLinearGradient(0, 0, 0, 400);
-    gradientHumid.addColorStop(0, 'rgba(6, 182, 212, 0.5)');   
+    gradientHumid.addColorStop(0, 'rgba(6, 182, 212, 0.5)');
     gradientHumid.addColorStop(1, 'rgba(6, 182, 212, 0.0)');
 
     const MAX_DATA_POINTS = 20;
-    
+
     const chart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -126,18 +126,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Khởi tạo data ban đầu nếu có từ backend render
     let lastTemp = initialData.V2 || 0;
     let lastHumid = initialData.V1 || 0;
-    
+
     updateTempUI(lastTemp);
     updateHumidUI(lastHumid);
 
     // Xử lý thêm vào biểu đồ
     const addDataToChart = (timeStr, tempOpt, humidOpt) => {
-        if(chart.data.labels.length > MAX_DATA_POINTS) {
+        if (chart.data.labels.length > MAX_DATA_POINTS) {
             chart.data.labels.shift();
             chart.data.datasets[0].data.shift();
             chart.data.datasets[1].data.shift();
         }
-        
+
         chart.data.labels.push(timeStr);
         chart.data.datasets[0].data.push(tempOpt !== null ? tempOpt : lastTemp);
         chart.data.datasets[1].data.push(humidOpt !== null ? humidOpt : lastHumid);
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     socket.on('sensor_update', (data) => {
         const { topic, value } = data;
-        
+
         if (topic === 'V2') { // Nhiệt độ
             lastTemp = value;
             updateTempUI(value);
@@ -174,6 +174,37 @@ document.addEventListener('DOMContentLoaded', () => {
             lastHumid = value;
             updateHumidUI(value);
         }
+    });
+
+    // === Motion Detection Notification ===
+    const notificationContainer = document.getElementById('notification-container');
+
+    const showMotionNotification = () => {
+        const notification = document.createElement('div');
+        notification.className = 'motion-alert glass-panel active';
+        notification.innerHTML = `
+            <div class="alert-content">
+                <i class="fa-solid fa-person-running"></i>
+                <div class="alert-text">
+                    <strong>Phát hiện chuyển động!</strong>
+                    <span>Có người di chuyển trong khu vực cảm biến.</span>
+                </div>
+            </div>
+        `;
+        notificationContainer.appendChild(notification);
+
+        // Remove after 5 seconds
+        setTimeout(() => {
+            notification.classList.remove('active');
+            setTimeout(() => {
+                notification.remove();
+            }, 500);
+        }, 5000);
+    };
+
+    socket.on('motion_detected', (data) => {
+        console.log("Motion detected!", data);
+        showMotionNotification();
     });
 
 });
