@@ -27,10 +27,12 @@
                 <span>Smart AIoT</span>
             </div>
             <ul class="nav-links">
-                <li class="active"><a href="#"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
-                <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History (M4)</a></li>
-                <li><a href="#"><i class="fa-solid fa-brain"></i> Analytics (M5)</a></li>
-                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li class="active" data-tab="dashboard-tab"><a href="#"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+                <li data-tab="control-tab"><a href="#"><i class="fa-solid fa-sliders"></i> Điều khiển (M3)</a></li>
+                <li data-tab="security-tab"><a href="#"><i class="fa-solid fa-shield-halved"></i> An ninh / Cửa</a></li>
+                <li data-tab="history-tab"><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> History (M4)</a></li>
+                <li data-tab="analytics-tab"><a href="#"><i class="fa-solid fa-brain"></i> Analytics (M5)</a></li>
+                <li data-tab="settings-tab"><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
             </ul>
         </nav>
 
@@ -44,61 +46,226 @@
                 </div>
             </header>
 
-            <div class="dashboard-grid">
-                <!-- V2: Nhiet do -->
-                <div class="widget glass-panel">
-                    <div class="widget-header">
-                        <i class="fa-solid fa-temperature-half widget-icon temp-icon"></i>
-                        <h3>Độ ẩm / Nhiệt Độ (DHT20)</h3>
-                    </div>
-                    <div class="widget-body">
-                        <div class="value-display">
-                            <span id="temp-value">--</span>
-                            <span class="unit">°C</span>
+            <!-- Tab Dashboard (M1) -->
+            <div id="dashboard-tab" class="tab-content active">
+                <div class="dashboard-grid">
+                    <!-- V2: Nhiet do -->
+                    <div class="widget glass-panel">
+                        <div class="widget-header">
+                            <i class="fa-solid fa-temperature-half widget-icon temp-icon"></i>
+                            <h3>Độ ẩm / Nhiệt Độ (DHT20)</h3>
                         </div>
-                        <div class="progress-bar-bg">
-                            <div class="progress-bar temp-bar" id="temp-progress" style="width: 0%;"></div>
+                        <div class="widget-body">
+                            <div class="value-display">
+                                <span id="temp-value">--</span>
+                                <span class="unit">°C</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar temp-bar" id="temp-progress" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- V1: Do am / Anh sang -->
+                    <div class="widget glass-panel">
+                        <div class="widget-header">
+                            <i class="fa-solid fa-droplet widget-icon humid-icon"></i>
+                            <h3>Ánh Sáng</h3>
+                        </div>
+                        <div class="widget-body">
+                            <div class="value-display">
+                                <span id="humid-value">--</span>
+                                <span class="unit">%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar humid-bar" id="humid-progress" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Extra Space for Module 2/3 (Devices) -->
+                    <div class="widget glass-panel device-control">
+                        <div class="widget-header">
+                            <i class="fa-solid fa-house-signal widget-icon device-icon"></i>
+                            <h3>Trạng Thái Thiết Bị</h3>
+                        </div>
+                        <div class="widget-body">
+                            <div class="device-summary">
+                                <div class="device-item">
+                                    <i class="fa-solid fa-fan"></i>
+                                    <span>Quạt:</span>
+                                    <span id="dash-fan-status" class="status-badge off">TẮT</span>
+                                </div>
+                                <div class="device-item">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    <span>Đèn:</span>
+                                    <span id="dash-light-status" class="status-badge off">TẮT</span>
+                                </div>
+                                <div class="device-item">
+                                    <i class="fa-solid fa-door-closed"></i>
+                                    <span>Cửa:</span>
+                                    <span id="dash-door-status" class="status-badge off">KHÓA</span>
+                                </div>
+                                <div class="device-mode-info">
+                                    <span id="dash-mode-status" class="mode-badge auto">Chế độ: Auto</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chart Area -->
+                    <div class="widget glass-panel chart-widget">
+                        <div class="widget-header">
+                            <i class="fa-solid fa-chart-line widget-icon chart-icon"></i>
+                            <h3>Biểu đồ Diễn Biến Theo Thời Gian</h3>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="realtimeChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Điều khiển (M3) -->
+            <div id="control-tab" class="tab-content">
+                <div class="control-header glass-panel">
+                    <div class="mode-selector-container">
+                        <div class="mode-info">
+                            <h3>Chế độ Hoạt động</h3>
+                            <p id="mode-desc">Hệ thống đang tự động điều chỉnh theo Cảm biến Nhiệt độ và Ánh sáng.</p>
+                        </div>
+                        <div class="mode-switch-wrapper">
+                            <span class="mode-label" id="label-auto">Auto</span>
+                            <label class="premium-switch mode-switch">
+                                <input type="checkbox" id="mode-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="mode-label" id="label-manual">Manual</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- V1: Do am / Anh sang -->
-                <div class="widget glass-panel">
-                    <div class="widget-header">
-                        <i class="fa-solid fa-droplet widget-icon humid-icon"></i>
-                        <h3>Ánh Sáng</h3>
-                    </div>
-                    <div class="widget-body">
-                        <div class="value-display">
-                            <span id="humid-value">--</span>
-                            <span class="unit">%</span>
+                <div class="control-cards-grid">
+                    <!-- Quạt -->
+                    <div class="control-card glass-panel" id="card-fan">
+                        <div class="card-icon-wrapper fan-glow">
+                            <i class="fa-solid fa-fan" id="icon-fan"></i>
                         </div>
-                        <div class="progress-bar-bg">
-                            <div class="progress-bar humid-bar" id="humid-progress" style="width: 0%;"></div>
+                        <div class="card-info">
+                            <h3>Quạt Làm Mát</h3>
+                            <span class="device-state-text" id="state-text-fan">ĐANG TẮT</span>
+                        </div>
+                        <div class="card-action">
+                            <label class="premium-switch device-switch">
+                                <input type="checkbox" id="fan-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Đèn -->
+                    <div class="control-card glass-panel" id="card-light">
+                        <div class="card-icon-wrapper light-glow">
+                            <i class="fa-solid fa-lightbulb" id="icon-light"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Đèn Chiếu Sáng</h3>
+                            <span class="device-state-text" id="state-text-light">ĐANG TẮT</span>
+                        </div>
+                        <div class="card-action">
+                            <label class="premium-switch device-switch">
+                                <input type="checkbox" id="light-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Khóa Cửa -->
+                    <div class="control-card glass-panel" id="card-door-control">
+                        <div class="card-icon-wrapper door-glow">
+                            <i class="fa-solid fa-door-closed" id="icon-door-control"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>Chốt Cửa Thông Minh</h3>
+                            <span class="device-state-text" id="state-text-door-control">ĐANG KHÓA</span>
+                        </div>
+                        <div class="card-action">
+                            <label class="premium-switch device-switch">
+                                <input type="checkbox" id="door-control-toggle">
+                                <span class="slider round"></span>
+                            </label>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Extra Space for Module 2/3 (Devices) -->
-                <div class="widget glass-panel device-control">
-                    <div class="widget-header">
-                        <i class="fa-solid fa-house-signal widget-icon device-icon"></i>
-                        <h3>Trạng Thái Thiết Bị</h3>
+            <!-- Tab An ninh / Khóa cửa -->
+            <div id="security-tab" class="tab-content">
+                <div class="security-grid">
+                    <!-- Live Camera Feed -->
+                    <div class="widget glass-panel camera-widget">
+                        <div class="widget-header">
+                            <i class="fa-solid fa-video widget-icon camera-icon"></i>
+                            <h3>Camera Nhận diện Khuôn mặt (AI)</h3>
+                            <span class="camera-status-badge standby" id="cam-status-badge">STANDBY</span>
+                        </div>
+                        <div class="camera-stream-container">
+                            <img id="live-camera-stream" src="{{ url_for('video_feed') }}" alt="Live Camera Stream">
+                        </div>
+                        <div class="camera-footer">
+                            <p id="cam-status-msg"><i class="fa-solid fa-circle-info"></i> Hệ thống đang trong trạng thái chờ. Camera sẽ tự động kích hoạt khi Cảm biến chuyển động (PIR) phát hiện có người.</p>
+                        </div>
                     </div>
-                    <div class="widget-body">
-                        <p class="placeholder-text">Sẵn sàng tích hợp Module 3 (Điều khiển Quạt/Đèn)</p>
+
+                    <!-- Door Lock Status & Controls -->
+                    <div class="widget glass-panel door-widget">
+                        <div class="widget-header">
+                            <i class="fa-solid fa-lock widget-icon door-icon"></i>
+                            <h3>Khóa Cửa Thông Minh (Servo SG90)</h3>
+                        </div>
+                        <div class="door-status-display">
+                            <div class="door-lock-circle locked" id="door-lock-circle">
+                                <i class="fa-solid fa-lock" id="door-lock-icon"></i>
+                            </div>
+                            <h2 id="door-status-text">CỬA ĐANG KHÓA</h2>
+                            <p class="door-subtext">Góc quay Servo: <span id="servo-angle">0°</span></p>
+                        </div>
+
+                        <div class="door-manual-control">
+                            <h3>Điều khiển Khẩn cấp / Khách</h3>
+                            <button id="btn-unlock-door" class="btn-glow-success"><i class="fa-solid fa-key"></i> Mở Khóa Cửa (5s)</button>
+                        </div>
+
+                        <div class="unlock-history">
+                            <h3>Nhật ký Mở khóa Gần đây</h3>
+                            <ul class="log-list" id="unlock-log-list">
+                                <li class="log-item empty-log">Chưa có sự kiện mở khóa nào.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Chart Area -->
-                <div class="widget glass-panel chart-widget">
-                    <div class="widget-header">
-                        <i class="fa-solid fa-chart-line widget-icon chart-icon"></i>
-                        <h3>Biểu đồ Diễn Biến Theo Thời Gian</h3>
-                    </div>
-                    <div class="chart-container">
-                        <canvas id="realtimeChart"></canvas>
-                    </div>
+            <!-- Placeholder Tabs -->
+            <div id="history-tab" class="tab-content">
+                <div class="glass-panel placeholder-tab">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <h2>Lịch sử Dữ liệu (Module 4)</h2>
+                    <p>Tính năng lưu trữ và tra cứu lịch sử đang được hoàn thiện.</p>
+                </div>
+            </div>
+            <div id="analytics-tab" class="tab-content">
+                <div class="glass-panel placeholder-tab">
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Phân tích AI & Thống kê (Module 5)</h2>
+                    <p>Mô hình dự đoán và phân tích dữ liệu chuyên sâu sẽ sớm ra mắt.</p>
+                </div>
+            </div>
+            <div id="settings-tab" class="tab-content">
+                <div class="glass-panel placeholder-tab">
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>Cài đặt Hệ thống</h2>
+                    <p>Cấu hình ngưỡng cảnh báo và thông số MQTT Broker.</p>
                 </div>
             </div>
         </main>
