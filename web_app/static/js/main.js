@@ -207,6 +207,94 @@ document.addEventListener('DOMContentLoaded', () => {
         showMotionNotification();
     });
 
+    socket.on('occupancy_update', (data) => {
+        try {
+            const badge = document.getElementById('occupancy-badge');
+            if (!badge) return;
+            const occ = parseInt(data.occupied) === 1;
+            const prob = (data.prob || 0).toFixed(2);
+            badge.innerText = occ ? `Occupied (${prob})` : `Empty (${prob})`;
+            badge.classList.remove('unknown');
+            badge.classList.toggle('occupied', occ);
+            badge.classList.toggle('empty', !occ);
+        } catch (e) {
+            console.error('occupancy_update handler error', e);
+        }
+    });
+
+    const renderHistoryEntry = (entry, listElement) => {
+        if (!listElement || !entry) return;
+
+        const isDoorEvent = entry.topic === 'V7' || entry.type === 'security';
+        if (listElement === unlockLogList && !isDoorEvent) {
+            return;
+        }
+
+        const emptyLog = listElement.querySelector('.empty-log');
+        if (emptyLog) emptyLog.remove();
+
+        const iconMap = {
+            V1: 'fa-sun',
+            V2: 'fa-temperature-half',
+            V3: 'fa-person-running',
+            V4: 'fa-fan',
+            V5: 'fa-lightbulb',
+            V6: 'fa-sliders',
+            V7: 'fa-lock',
+        };
+
+        const iconClass = iconMap[entry.topic] || (entry.type === 'security' ? 'fa-key' : 'fa-circle-info');
+        const li = document.createElement('li');
+        li.className = 'log-item';
+
+        const sourceText = entry.source ? entry.source.toUpperCase() : 'UNKNOWN';
+        const timeText = entry.timestamp || '';
+        const messageText = entry.message || `${entry.topic}: ${entry.value}`;
+
+        li.innerHTML = `
+            <span><i class="fa-solid ${iconClass}"></i> ${messageText}</span>
+            <span style="color: var(--text-muted); font-size: 0.75rem; text-align: right;">
+                ${sourceText}${timeText ? `<br>${timeText}` : ''}
+            </span>
+        `;
+
+        listElement.insertBefore(li, listElement.firstChild);
+
+        if (listElement.children.length > 20) {
+            listElement.removeChild(listElement.lastChild);
+        }
+    };
+
+    const loadHistory = async () => {
+        if (!historyLogList) return;
+
+        try {
+            const response = await fetch('/api/history?limit=30');
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+            const payload = await response.json();
+            const entries = Array.isArray(payload.items) ? payload.items : [];
+
+            historyLogList.innerHTML = '';
+            if (unlockLogList) {
+                unlockLogList.innerHTML = '<li class="log-item empty-log">Chưa có sự kiện mở khóa nào.</li>';
+            }
+
+            if (entries.length === 0) {
+                historyLogList.innerHTML = '<li class="log-item empty-log">Chưa có dữ liệu lịch sử.</li>';
+                return;
+            }
+
+            entries.forEach((entry) => {
+                renderHistoryEntry(entry, historyLogList);
+                renderHistoryEntry(entry, unlockLogList);
+            });
+        } catch (error) {
+            console.error('Không tải được lịch sử:', error);
+            historyLogList.innerHTML = '<li class="log-item empty-log">Không thể tải lịch sử.</li>';
+        }
+    };
+
     // === Tab Switching Logic ===
     const navLinks = document.querySelectorAll('.nav-links li[data-tab]');
     const tabContents = document.querySelectorAll('.tab-content');
@@ -248,6 +336,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const doorControlToggle = document.getElementById('door-control-toggle');
     const cardDoorControl = document.getElementById('card-door-control');
     const stateTextDoorControl = document.getElementById('state-text-door-control');
+    const unlockLogList = document.getElementById('unlock-log-list');
+    const historyLogList = document.getElementById('history-log-list');
+    const refreshHistoryBtn = document.getElementById('refresh-history-btn');
 
     let currentMode = '0'; // 0: Auto, 1: Manual
 
@@ -382,45 +473,33 @@ document.addEventListener('DOMContentLoaded', () => {
         doorControlToggle.addEventListener('change', (e) => {
             const val = e.target.checked ? '1' : '0';
             socket.emit('set_device', { topic: 'V7', value: val });
-            addUnlockLog(e.target.checked ? 'Mở khóa thủ công (Tab Điều khiển)' : 'Khóa cửa thủ công (Tab Điều khiển)', true);
+            socket.emit('history_note', {
+                topic: 'V7',
+                value: val,
+                type: 'security',
+                source: 'web',
+                message: e.target.checked ? 'Mở khóa thủ công (Tab Điều khiển)' : 'Khóa cửa thủ công (Tab Điều khiển)'
+            });
         });
     }
 
     // === Module Security: Face Recognition & Door Lock Logic ===
     const camStatusBadge = document.getElementById('cam-status-badge');
     const camStatusMsg = document.getElementById('cam-status-msg');
-    const unlockLogList = document.getElementById('unlock-log-list');
     const btnUnlockDoor = document.getElementById('btn-unlock-door');
 
     if (btnUnlockDoor) {
         btnUnlockDoor.addEventListener('click', () => {
             socket.emit('set_device', { topic: 'V7', value: 'unlock' });
-            addUnlockLog('Mở khóa thủ công (Nút bấm Dashboard)', true);
+            socket.emit('history_note', {
+                topic: 'V7',
+                value: '1',
+                type: 'security',
+                source: 'web',
+                message: 'Mở khóa thủ công (Nút bấm Dashboard)'
+            });
         });
     }
-
-    const addUnlockLog = (userOrAction, success = true) => {
-        if (!unlockLogList) return;
-        const emptyLog = unlockLogList.querySelector('.empty-log');
-        if (emptyLog) emptyLog.remove();
-
-        const li = document.createElement('li');
-        li.className = 'log-item';
-        li.style.borderLeftColor = success ? 'var(--accent-green)' : 'var(--accent-red)';
-        
-        const now = new Date();
-        const timeStr = now.toLocaleTimeString('vi-VN');
-        
-        li.innerHTML = `
-            <span><i class="fa-solid ${success ? 'fa-user-check' : 'fa-user-xmark'}"></i> ${userOrAction}</span>
-            <span style="color: var(--text-muted); font-size: 0.75rem;">${timeStr}</span>
-        `;
-        unlockLogList.insertBefore(li, unlockLogList.firstChild);
-
-        if (unlockLogList.children.length > 10) {
-            unlockLogList.removeChild(unlockLogList.lastChild);
-        }
-    };
 
     socket.on('face_status', (data) => {
         console.log("[FaceStatus]", data);
@@ -434,7 +513,13 @@ document.addEventListener('DOMContentLoaded', () => {
             camStatusBadge.className = 'camera-status-badge success';
             camStatusBadge.innerText = 'MATCHED';
             camStatusMsg.innerHTML = `<i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i> ${data.message}`;
-            addUnlockLog(`Nhận diện AI: ${data.user}`, true);
+            socket.emit('history_note', {
+                topic: 'V7',
+                value: '1',
+                type: 'security',
+                source: 'face',
+                message: `Nhận diện AI: ${data.user}`
+            });
         } else if (data.status === 'timeout') {
             camStatusBadge.className = 'camera-status-badge standby';
             camStatusBadge.innerText = 'STANDBY';
@@ -445,5 +530,18 @@ document.addEventListener('DOMContentLoaded', () => {
             camStatusMsg.innerHTML = `<i class="fa-solid fa-triangle-exclamation" style="color: var(--accent-red);"></i> ${data.message}`;
         }
     });
+
+    socket.on('history_event', (entry) => {
+        renderHistoryEntry(entry, historyLogList);
+        renderHistoryEntry(entry, unlockLogList);
+    });
+
+    if (refreshHistoryBtn) {
+        refreshHistoryBtn.addEventListener('click', () => {
+            loadHistory();
+        });
+    }
+
+    loadHistory();
 
 });

@@ -132,6 +132,27 @@ body {
     font-size: 0.875rem;
 }
 
+.occupancy-badge {
+    margin-left: 8px;
+    padding: 6px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    background: rgba(255,255,255,0.04);
+    color: var(--text-muted);
+}
+.occupancy-badge.occupied {
+    background: var(--accent-green);
+    color: white;
+    box-shadow: 0 0 8px rgba(16,185,129,0.3);
+}
+.occupancy-badge.empty {
+    background: rgba(255,255,255,0.06);
+    color: var(--text-muted);
+}
+.occupancy-badge.unknown {
+    opacity: 0.8;
+}
+
 .pulse-dot {
     width: 10px;
     height: 10px;
@@ -649,6 +670,53 @@ input:checked + .slider:before {
 .placeholder-tab p {
     color: var(--text-muted);
     max-width: 400px;
+}
+
+.history-panel {
+    padding: 1.5rem;
+}
+
+.history-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.history-panel-header h2 {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.history-panel-header p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    max-width: 640px;
+}
+
+.history-refresh-btn {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+}
+
+.history-refresh-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
+}
+
+.history-log-list {
+    max-height: 420px;
+    overflow-y: auto;
 }
 
 /* === Security Tab (Smart Door Lock) Specifics === */

@@ -16,6 +16,7 @@ if parent_dir not in sys.path:
     sys.path.insert(0, parent_dir)
 
 from face_service.service import FaceScanner
+from ml.infer import OccupancyPredictor
 
 app = Flask(__name__)
 # Enable CORS for SocketIO
@@ -46,6 +47,70 @@ latest_data = {
     "V7": "0"
 }
 
+HISTORY_FILE_PATH = os.path.join(parent_dir, "web_app", "device_history.jsonl")
+HISTORY_LOCK = threading.Lock()
+HISTORY_DEFAULT_LIMIT = 50
+
+
+def _history_label(topic, value, source):
+    if topic == "V1":
+        return f"Ánh sáng: {value}%"
+    if topic == "V2":
+        return f"Nhiệt độ: {value}°C"
+    if topic == "V3" and str(value) == "1":
+        return "Cảm biến chuyển động: phát hiện người"
+    if topic == "V4":
+        return f"Quạt: {'Bật' if str(value) == '1' else 'Tắt'}"
+    if topic == "V5":
+        return f"Đèn: {'Bật' if str(value) == '1' else 'Tắt'}"
+    if topic == "V6":
+        return f"Chế độ: {'Manual' if str(value) == '1' else 'Auto'}"
+    if topic == "V7":
+        is_unlocked = str(value) in ["1", "unlock"]
+        if source == "face":
+            return f"Khóa cửa: {'Mở khóa bằng AI' if is_unlocked else 'Đóng khóa bằng AI'}"
+        return f"Khóa cửa: {'Mở khóa' if is_unlocked else 'Đóng khóa'}"
+    return f"{topic}: {value}"
+
+
+def record_history(topic, value, event_type="device", source="mqtt", message=None):
+    entry = {
+        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "topic": topic,
+        "value": value,
+        "type": event_type,
+        "source": source,
+        "message": message if message else _history_label(topic, value, source),
+    }
+
+    os.makedirs(os.path.dirname(HISTORY_FILE_PATH), exist_ok=True)
+    with HISTORY_LOCK:
+        with open(HISTORY_FILE_PATH, "a", encoding="utf-8") as history_file:
+            history_file.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+    socketio.emit("history_event", entry)
+
+
+def read_recent_history(limit=HISTORY_DEFAULT_LIMIT):
+    if not os.path.exists(HISTORY_FILE_PATH):
+        return []
+
+    entries = []
+    with HISTORY_LOCK:
+        with open(HISTORY_FILE_PATH, "r", encoding="utf-8") as history_file:
+            for line in history_file:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    entries.append(json.loads(line))
+                except json.JSONDecodeError:
+                    continue
+
+    if limit is None or limit <= 0:
+        return entries
+    return entries[-limit:]
+
 # --- MQTT Callbacks ---
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
@@ -70,19 +135,36 @@ def on_message(client, userdata, msg):
     if topic == MQTT_TOPIC_V1:
         latest_data["V1"] = payload
         socketio.emit('sensor_update', {'topic': 'V1', 'value': payload})
+        record_history('V1', payload, event_type='sensor', source='mqtt')
+        try:
+            predict_and_emit(pir_event=0)
+        except Exception:
+            pass
     elif topic == MQTT_TOPIC_V2:
         latest_data["V2"] = payload
         socketio.emit('sensor_update', {'topic': 'V2', 'value': payload})
+        record_history('V2', payload, event_type='sensor', source='mqtt')
+        try:
+            predict_and_emit(pir_event=0)
+        except Exception:
+            pass
     elif topic == MQTT_TOPIC_V3:
         if payload == "1":
             socketio.emit('motion_detected', {'status': 'motion'})
             # Tự động kích hoạt luồng quét khuôn mặt khi có chuyển động
             if face_scanner:
                 face_scanner.trigger_scan()
+            record_history('V3', payload, event_type='sensor', source='mqtt')
+            try:
+                predict_and_emit(pir_event=1)
+            except Exception:
+                pass
     elif topic in [MQTT_TOPIC_V4, MQTT_TOPIC_V5, MQTT_TOPIC_V6, MQTT_TOPIC_V7]:
         feed_id = topic.split("/")[-1]
         latest_data[feed_id] = payload
         socketio.emit('device_update', {'topic': feed_id, 'value': payload})
+        if feed_id in ["V4", "V5", "V6"]:
+            record_history(feed_id, payload, event_type='device', source='mqtt')
 
 # Setup MQTT Client
 mqtt_client = mqtt.Client()
@@ -93,6 +175,22 @@ mqtt_client.on_message = on_message
 # Khởi tạo dịch vụ FaceScanner với đường dẫn lưu trữ khuôn mặt
 KNOWN_FACES_DIR = os.path.join(parent_dir, "face_service", "known_faces")
 face_scanner = FaceScanner(KNOWN_FACES_DIR, mqtt_client, MQTT_TOPIC_V7, socketio)
+
+# Load occupancy predictor (best-effort; model may not exist)
+predictor = OccupancyPredictor(os.path.join(parent_dir, 'web_app', 'models', 'occupancy_model.joblib'))
+
+def predict_and_emit(pir_event=0):
+    try:
+        import datetime
+        hour = datetime.datetime.now().hour
+        light = latest_data.get('V1', 0)
+        temp = latest_data.get('V2', 0)
+        face_flag = 1 if str(latest_data.get('V7', '0')) not in ['0', ''] else 0
+        pir_count = 1 if pir_event == 1 else 0
+        res = predictor.predict(hour, light, temp, pir_count, face_flag)
+        socketio.emit('occupancy_update', res)
+    except Exception as e:
+        print('[occupancy] predict error', e)
 
 def start_mqtt():
     try:
@@ -113,7 +211,6 @@ def video_feed():
 
 @app.route('/update', methods=['POST'])
 def handle_data():
-    from flask import request, jsonify
     if request.is_json:
         data = request.get_json()
         temp = data.get("temp")
@@ -124,13 +221,29 @@ def handle_data():
         if temp is not None:
             latest_data["V2"] = temp
             socketio.emit('sensor_update', {'topic': 'V2', 'value': temp})
+            record_history('V2', temp, event_type='sensor', source='http')
+            try:
+                predict_and_emit(pir_event=0)
+            except Exception:
+                pass
         if humi is not None:
             latest_data["V1"] = humi
             socketio.emit('sensor_update', {'topic': 'V1', 'value': humi})
+            record_history('V1', humi, event_type='sensor', source='http')
+            try:
+                predict_and_emit(pir_event=0)
+            except Exception:
+                pass
             
         print(f"--- Nhận dữ liệu HTTP từ Yolobit: {data} ---")
         return jsonify({"status": "Success"}), 200
     return jsonify({"status": "Invalid JSON"}), 400
+
+
+@app.route('/api/history')
+def get_history():
+    limit = request.args.get('limit', default=HISTORY_DEFAULT_LIMIT, type=int)
+    return jsonify({"items": read_recent_history(limit)})
 
 @socketio.on('connect')
 def handle_connect():
@@ -153,6 +266,16 @@ def handle_set_device(data):
         latest_data[topic] = value
         socketio.emit('device_update', {'topic': topic, 'value': value})
         print(f" Đã gửi lệnh MQTT: {full_topic} -> {value}")
+
+
+@socketio.on('history_note')
+def handle_history_note(data):
+    topic = data.get('topic', 'V7')
+    value = data.get('value', '1')
+    event_type = data.get('type', 'security')
+    source = data.get('source', 'web')
+    message = data.get('message')
+    record_history(topic, value, event_type=event_type, source=source, message=message)
 
 if __name__ == '__main__':
     print("Khởi động server...")

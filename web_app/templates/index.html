@@ -43,6 +43,7 @@
                 <div class="status-indicator">
                     <span class="pulse-dot" id="connection-status"></span>
                     <span id="status-text">Đang kết nối...</span>
+                    <span id="occupancy-badge" class="occupancy-badge unknown">Trạng thái: —</span>
                 </div>
             </header>
 
@@ -248,10 +249,20 @@
 
             <!-- Placeholder Tabs -->
             <div id="history-tab" class="tab-content">
-                <div class="glass-panel placeholder-tab">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <h2>Lịch sử Dữ liệu (Module 4)</h2>
-                    <p>Tính năng lưu trữ và tra cứu lịch sử đang được hoàn thiện.</p>
+                <div class="glass-panel history-panel">
+                    <div class="history-panel-header">
+                        <div>
+                            <h2>Lịch sử Hoạt động Thiết bị</h2>
+                            <p>Tất cả lần cập nhật cảm biến, thiết bị và sự kiện cửa sẽ được ghi lại ở đây.</p>
+                        </div>
+                        <button type="button" id="refresh-history-btn" class="history-refresh-btn">
+                            <i class="fa-solid fa-rotate"></i>
+                            Làm mới
+                        </button>
+                    </div>
+                    <ul class="log-list history-log-list" id="history-log-list">
+                        <li class="log-item empty-log">Đang tải lịch sử...</li>
+                    </ul>
                 </div>
             </div>
             <div id="analytics-tab" class="tab-content">
